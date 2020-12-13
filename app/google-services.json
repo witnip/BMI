@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88775027995",
+    "firebase_url": "https://fitness-ensure-296917.firebaseio.com",
+    "project_id": "fitness-ensure-296917",
+    "storage_bucket": "fitness-ensure-296917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88775027995:android:ac21f210d2a85f816c77be",
+        "android_client_info": {
+          "package_name": "com.witnip.bmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88775027995-ov1jcube3mapokmi0iogsi8i82a9412c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.witnip.bmi",
+            "certificate_hash": "7ca451bf91315510ec4e3eb62dbcf36a1509eced"
+          }
+        },
+        {
+          "client_id": "88775027995-t4enr9otchc5bj5m7be52610afffgrks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeCeaxQN7JjGRjKiLWSgGamNYNN4mJs2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88775027995-e59458vcni0ltmkmvl7e3omhusa1dmaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

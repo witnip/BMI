@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="25dp"
+    tools:context=".Activities.Login">
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:fontFamily="@font/montserrat"
+        tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLogin"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Email Address"
+        android:padding="14dp"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat"
+        tools:targetApi="jelly_bean" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginBottom="14dp"
+        android:textSize="14sp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:fontFamily="@font/montserrat"
+            tools:targetApi="jelly_bean" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/lblForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorAccent"
+        app:fontFamily="@font/montserrat"
+        tools:targetApi="jelly_bean" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblForgotPassword"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:elevation="15dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat_bold"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:id="@+id/rlOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="50dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/lblOr"
+            android:layout_toLeftOf="@id/lblOr"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/lblOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="10dp"
+            android:text="OR"
+            android:textSize="14sp"
+            app:fontFamily="@font/montserrat"
+            tools:targetApi="jelly_bean" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/lblOr"
+            android:layout_toRightOf="@id/lblOr"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlOr"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_google">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_google" />
+
+        <Button
+            android:id="@+id/btnGoogleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorTransparent"
+            android:fontFamily="@font/montserrat"
+            android:paddingTop="10dp"
+            android:text="Login with Google"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            tools:targetApi="jelly_bean" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlGoogle"
+        android:background="@drawable/button_facebook">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_facebook" />
+
+        <Button
+            android:id="@+id/btnFacebookLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent"
+            android:fontFamily="@font/montserrat"
+            android:paddingVertical="19dp"
+            android:text="  Login with Facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            tools:targetApi="jelly_bean" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlFacebook"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Don't have an account?"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/lblRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text=" Register"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</RelativeLayout>

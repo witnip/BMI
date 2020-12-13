@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#231F20</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF6F20</color>
+    <color name="colorLeft">#FBB03B</color>
+    <color name="colorRight">#F15A24</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#D0D2D3</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorUnderWeight">#29abe2</color>
+    <color name="colorNormalWeight">#39b54a</color>
+    <color name="colorOverWeight">#fbb03b</color>
+    <color name="colorObese">#f15a24</color>
+    <color name="colorMorbidlyObese">#c1272d</color>
+    <color name="colorBlack">#000000</color>
+</resources>

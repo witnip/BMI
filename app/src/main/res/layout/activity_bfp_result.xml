@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activities.BfpResult">
+
+    <ProgressBar
+        android:id="@+id/pbBFP"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:progress="20"
+        android:progressTint="@color/colorNormalWeight"/>
+
+    <TextView
+        android:id="@+id/lblBfpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pbBFP"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat"
+        android:text="0%"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlEssentialFatPercent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblBfpResult"
+        android:layout_marginTop="40dp">
+
+        <View
+            android:id="@+id/vEssentialFatPercent"
+            android:layout_width="8dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorUnderWeight" />
+
+        <RelativeLayout
+            android:id="@+id/rlEssentialFatPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/vEssentialFatPercent"
+            android:background="@drawable/edit_text"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivEssentialFatPercent"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_under_weight" />
+
+
+            <TextView
+                android:id="@+id/lblEssentialFatPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/ivEssentialFatPercent"
+                android:fontFamily="@font/montserrat"
+                android:text="Essential Fat Percent"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblEssentialFatPercentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="2-5%"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFatPercentForAthletes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEssentialFatPercent1">
+
+        <View
+            android:id="@+id/vFatPercentForAthletes"
+            android:layout_width="8dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorNormalWeight" />
+
+        <RelativeLayout
+            android:id="@+id/rlFatPercentForAthletes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/vFatPercentForAthletes"
+            android:background="@drawable/edit_text"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivFatPercentForAthletes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_athlete" />
+
+
+            <TextView
+                android:id="@+id/lblFatPercentForAthletes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/ivFatPercentForAthletes"
+                android:fontFamily="@font/montserrat"
+                android:text="Fat Percent for Athletes"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblFatPercentForAthletesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="6-13%"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFitnessLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlFatPercentForAthletes1">
+
+        <View
+            android:id="@+id/vFitnessLevel"
+            android:layout_width="8dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorOverWeight" />
+
+        <RelativeLayout
+            android:id="@+id/rlFitnessLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/vFitnessLevel"
+            android:background="@drawable/edit_text"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivFitnessLevel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_over_weight" />
+
+
+            <TextView
+                android:id="@+id/lblFitnessLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/ivFitnessLevel"
+                android:fontFamily="@font/montserrat"
+                android:text="Fitness Level"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblFitnessLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="14-17%"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAverageLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlFitnessLevel1">
+
+        <View
+            android:id="@+id/vAverageLevel"
+            android:layout_width="8dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorObese" />
+
+        <RelativeLayout
+            android:id="@+id/rlAverageLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/vAverageLevel"
+            android:background="@drawable/edit_text"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivAverageLevel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_obese" />
+
+
+            <TextView
+                android:id="@+id/lblAverageLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/ivAverageLevel"
+                android:fontFamily="@font/montserrat"
+                android:text="Average Level"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblAverageLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="18-24%"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlObeseLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlAverageLevel1">
+
+        <View
+            android:id="@+id/vObeseLevel"
+            android:layout_width="8dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorMorbidlyObese" />
+
+        <RelativeLayout
+            android:id="@+id/rlObeseLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/vObeseLevel"
+            android:background="@drawable/edit_text"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivObeseLevel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_morbidly_obese" />
+
+
+            <TextView
+                android:id="@+id/lblObeseLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/ivObeseLevel"
+                android:fontFamily="@font/montserrat"
+                android:text="Obese Level"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblObeseLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="25% and above"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

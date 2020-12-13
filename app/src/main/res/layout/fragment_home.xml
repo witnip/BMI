@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-5dp"
+                android:contentDescription="@string/banner"
+                app:srcCompat="@drawable/home_banner" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/good_morning"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/user_name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivBanner"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/height"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/txtHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="5ft 6in"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorAccent"
+                    tools:targetApi="jelly_bean" />
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="right"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_height" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llHeight"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Weight"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/txtWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="75.6 kg"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorAccent"
+                    tools:targetApi="jelly_bean" />
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_weight" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWaist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llWeight"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Waist"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/txtWaist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="34.6 in"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorAccent"
+                    tools:targetApi="jelly_bean" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="right"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_waist" />
+
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/glForms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llWaist"
+                android:columnCount="3"
+                android:padding="20dp"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnBMI"
+                        android:background="@drawable/bmi_dash"
+                        android:orientation="horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="BMI"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnWeightGoal"
+                        android:orientation="horizontal"
+                        android:background="@drawable/weight_goals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Weight Goals"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnDiet"
+                        android:orientation="horizontal"
+                        android:background="@drawable/diet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Diet"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnBFP"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bfp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="BFP"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnIdealWeight"
+                        android:orientation="horizontal"
+                        android:background="@drawable/ideal_weight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Ideal Weight"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/btnCalories"
+                        android:orientation="horizontal"
+                        android:background="@drawable/calories" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Calories"
+                        android:textColor="@color/colorPrimary"
+                        tools:targetApi="jelly_bean" />
+                </LinearLayout>
+            </GridLayout>
+
+            <ImageView
+                android:id="@+id/ivGmDiet"
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:layout_below="@id/glForms"
+                android:background="@drawable/gm_diet_banner" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/glForms"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="GM Diet"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Start GM diet to lose 7 - 8 kgs \nin a week"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    tools:targetApi="jelly_bean" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlWaterIntake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivGmDiet"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivWaterIntake"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_water_intake" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@id/ivWaterIntake"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/lblWaterIntake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Water Intake"
+                    tools:targetApi="jelly_bean" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlWeightTracker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlWaterIntake"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivWeightTracker"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_weight_tracker" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@id/ivWeightTracker"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/lblWeightTracker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Weight Tracker"
+                    tools:targetApi="jelly_bean" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

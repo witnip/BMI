@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.witnip.bmi.Activities.WaterIntake">
+
+    <Toolbar
+        android:id="@+id/tbWaterIntake"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/ic_water_intake_header"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Daily Water Intake"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbWaterIntake"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rlWaterIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Select Date" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_arrow"
+                android:layout_toRightOf="@id/lblDate"/>
+            <TextView
+                android:id="@+id/lblCurrentWaterIntake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="0 ml"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblRemainingWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblCurrentWaterIntake"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:text="3700 ml to go" />
+
+            <LinearLayout
+                android:id="@+id/llButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblRemainingWater"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/montserrat"
+                    android:text="ADD"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btnViewGraph"
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/button2"
+                    android:fontFamily="@font/montserrat"
+                    android:text="View Graph"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/llButton"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"
+                android:text="Goal 8 glass per day (1 glass = 230 ml)" />
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvWaterIntake"
+            android:layout_below="@id/rlWaterIntake"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

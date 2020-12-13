@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.witnip.bmi.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_profile"
+        android:name="com.witnip.bmi.Activities.Profile"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/activity_profile" />
+    <activity
+        android:id="@+id/nav_about"
+        android:name="com.witnip.bmi.Activities.About"
+        android:label="@string/menu_about"
+        tools:layout="@layout/activity_about" />
+    <activity
+        android:id="@+id/nav_share"
+        android:name="com.witnip.bmi.Activities.Share"
+        android:label="@string/menu_share"
+        tools:layout="@layout/activity_share" />
+    <activity
+        android:id="@+id/nav_feedback"
+        android:name="com.witnip.bmi.Activities.FeedBack"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/activity_feed_back" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.witnip.bmi.Activities.Logout"
+        android:label="@string/menu_logout" />
+</navigation>

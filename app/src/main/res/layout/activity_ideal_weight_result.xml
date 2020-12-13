@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activities.IdealWeightResult">
+
+    <ProgressBar
+        android:id="@+id/pbIBW"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/lblIBW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pbIBW"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="70.70 kg"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlIBW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblIBW1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ibw"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ideal Body Weight"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/lblIBW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70.70 kg"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/montserrat"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLBW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlIBW"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lean Body Weight"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/lblLBW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70.70 kg"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlLBW"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Surface Area"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/lblBSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.87 m²"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat" />
+    </RelativeLayout>
+
+</RelativeLayout>

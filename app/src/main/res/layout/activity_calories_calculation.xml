@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activities.CaloriesCalculation">
+
+    <RelativeLayout
+        android:id="@+id/rlGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivGender"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_gender_male" />
+
+        <TextView
+            android:id="@+id/lblGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivGender"
+            android:fontFamily="@font/montserrat"
+            android:text="Male"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlGender"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivDOB"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_dob" />
+
+        <TextView
+            android:id="@+id/lblDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/ivDOB"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:text="DOB"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlDOB"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblErrorDOB"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp">
+
+        <ImageView
+            android:id="@+id/ivHeight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_profile_height" />
+
+        <TextView
+            android:id="@+id/lblHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivHeight"
+            android:fontFamily="@font/montserrat"
+            android:text="Height"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtHeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/lblHeight"
+            android:ems="3"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimHeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtHeight1"
+            android:layout_toEndOf="@id/txtHeight1"
+            android:text="ft"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtHeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/lblDimHeight1"
+            android:ems="3"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimHeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtHeight2"
+            android:layout_toEndOf="@id/txtHeight2"
+            android:text="in"
+            android:textSize="12sp" />
+
+
+        <Spinner
+            android:id="@+id/spHeight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeight"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblErrorHeight"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp">
+
+        <ImageView
+            android:id="@+id/ivWeight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_profile_weight" />
+
+        <TextView
+            android:id="@+id/lblWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivWeight"
+            android:fontFamily="@font/montserrat"
+            android:text="Weight"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/lblWeight"
+            android:ems="7"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtWeight"
+            android:layout_toEndOf="@id/txtWeight"
+            android:text="kg"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spWeight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlWeight"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlExerciseLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblErrorWeight"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivExerciseLevel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_exercise_level" />
+
+        <TextView
+            android:id="@+id/lblExerciseLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivExerciseLevel"
+            android:fontFamily="@font/montserrat"
+            android:text="Exercise Level"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+
+        <Spinner
+            android:id="@+id/spExerciseLevel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/lblExerciseLevel"
+            android:backgroundTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlExerciseLevel"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:elevation="15dp"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat_bold"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTransparent"
+        android:elevation="15dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReset"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlBMR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivBMR"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_metabolic_rate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivBMR"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblBMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Basal Metabolic Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblBMRValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="1735.06"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDCC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivDCC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_daily_calorie_count" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivDCC"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblDCC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Min Calorie Count"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblDCCValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="2083.06"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMaxDCC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivMaxDCC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_daily_calorie_count" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivMaxDCC"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblMaxDCC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Max Calorie Count"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblMaxDCCValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="2083.06"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

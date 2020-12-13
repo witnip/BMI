@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activities.BfpCalculation">
+
+    <RelativeLayout
+        android:id="@+id/rlGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivGender"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_gender_male" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toEndOf="@id/ivGender"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/lblGender"/>
+
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            tools:targetApi="lollipop"
+            tools:ignore="SmallSp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlGender"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivDOB"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_dob" />
+
+        <TextView
+            android:id="@+id/lblDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/ivDOB"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:text="DOB"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlDOB"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblErrorDOB"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp">
+
+        <ImageView
+            android:id="@+id/ivHeight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_profile_height" />
+
+        <TextView
+            android:id="@+id/lblHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivHeight"
+            android:fontFamily="@font/montserrat"
+            android:text="Height"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtHeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/lblHeight"
+            android:ems="3"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimHeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtHeight1"
+            android:layout_toEndOf="@id/txtHeight1"
+            android:text="ft"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtHeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/lblDimHeight1"
+            android:ems="3"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimHeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtHeight2"
+            android:layout_toEndOf="@id/txtHeight2"
+            android:text="in"
+            android:textSize="12sp" />
+
+
+        <Spinner
+            android:id="@+id/spHeight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeight"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblErrorHeight"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp">
+
+        <ImageView
+            android:id="@+id/ivWeight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_profile_weight" />
+
+        <TextView
+            android:id="@+id/lblWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/ivWeight"
+            android:fontFamily="@font/montserrat"
+            android:text="Weight"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/txtWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/lblWeight"
+            android:ems="7"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblDimWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtWeight"
+            android:layout_toEndOf="@id/txtWeight"
+            android:text="kg"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spWeight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblErrorWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlWeight"
+        android:layout_marginTop="5dp"
+        android:text="please enter valid data"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlWeight"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:elevation="15dp"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat_bold"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="10dp"
+        android:text="Reset"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorTransparent"
+        android:textAllCaps="false"
+        android:elevation="15dp"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

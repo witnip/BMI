@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WeightGoal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <RelativeLayout
+                android:id="@+id/rlStartingWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:layout_marginTop="30dp"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp">
+
+                <ImageView
+                    android:id="@+id/ivStartingWeight"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_profile_weight" />
+
+                <TextView
+                    android:id="@+id/lblStartingWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/ivStartingWeight"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Starting Weight"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txtStartingWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/lblStartingWeight"
+                    android:ems="7"
+                    android:gravity="bottom"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblDimStartingWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/txtStartingWeight"
+                    android:layout_toEndOf="@id/txtStartingWeight"
+                    android:text="kg"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spStartingWeight"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    tools:targetApi="lollipop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblErrorStartingWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlStartingWeight"
+                android:layout_marginTop="5dp"
+                android:text="please enter valid data"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlCurrentWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblErrorStartingWeight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp">
+
+                <ImageView
+                    android:id="@+id/ivCurrentWeight"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_profile_weight" />
+
+                <TextView
+                    android:id="@+id/lblCurrentWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/ivCurrentWeight"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Current Weight"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txtCurrentWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/lblCurrentWeight"
+                    android:ems="7"
+                    android:gravity="bottom"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblDimCurrentWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/txtCurrentWeight"
+                    android:layout_toEndOf="@id/txtCurrentWeight"
+                    android:text="kg"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spCurrentWeight"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    tools:targetApi="lollipop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblErrorCurrentWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlCurrentWeight"
+                android:layout_marginTop="5dp"
+                android:text="please enter valid data"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoalWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblErrorCurrentWeight"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp">
+
+                <ImageView
+                    android:id="@+id/ivGoalWeight"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_profile_weight" />
+
+                <TextView
+                    android:id="@+id/lblGoalWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/ivGoalWeight"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Goal Weight"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txtGoalWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/lblGoalWeight"
+                    android:ems="7"
+                    android:gravity="bottom"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblDimGoalWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/txtGoalWeight"
+                    android:layout_toEndOf="@id/txtGoalWeight"
+                    android:text="kg"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spGoalWeight"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    tools:targetApi="lollipop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblErrorGoalWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlGoalWeight"
+                android:layout_marginTop="5dp"
+                android:text="please enter valid data"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblErrorGoalWeight"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:elevation="15dp"
+                android:text="Calculate"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/montserrat_bold"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnCalculate"
+                android:layout_marginTop="10dp"
+                android:text="Reset"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorTransparent"
+                android:textAllCaps="false"
+                android:elevation="15dp"
+                tools:targetApi="lollipop" />
+
+            <RelativeLayout
+                android:id="@+id/rlProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnReset"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/lblProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Progress" />
+
+                <ProgressBar
+                    android:id="@+id/pbProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_below="@id/lblProgress"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/lblProgressValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pbProgress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="70.59%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/lblProgressWeightLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblProgressValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_horizontal"
+                    android:text="Percentage of weight loss so far is 14.12%"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblProgressWeightLossTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblProgressWeightLoss"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_horizontal"
+                    android:text="Percentage of weight loss still required to reach the target weight is 6.85%"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblProgressTotalWeightLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblProgressWeightLossTarget"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_horizontal"
+                    android:text="Total percentage of weight lost after reaching the target weight is 20%"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
