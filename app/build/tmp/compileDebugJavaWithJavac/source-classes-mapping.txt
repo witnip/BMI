@@ -1,0 +1,173 @@
+com/witnip/bmi/BuildConfig.java
+ com.witnip.bmi.BuildConfig
+com/witnip/bmi/Activities/IdealWeightCalculation.java
+ com.witnip.bmi.Activities.IdealWeightCalculation
+ com.witnip.bmi.Activities.IdealWeightCalculation$1
+ com.witnip.bmi.Activities.IdealWeightCalculation$2
+ com.witnip.bmi.Activities.IdealWeightCalculation$3
+ com.witnip.bmi.Activities.IdealWeightCalculation$4
+ com.witnip.bmi.Activities.IdealWeightCalculation$5
+com/witnip/bmi/Activities/EditProfile.java
+ com.witnip.bmi.Activities.EditProfile
+ com.witnip.bmi.Activities.EditProfile$1
+ com.witnip.bmi.Activities.EditProfile$2
+ com.witnip.bmi.Activities.EditProfile$3
+ com.witnip.bmi.Activities.EditProfile$4
+ com.witnip.bmi.Activities.EditProfile$5
+ com.witnip.bmi.Activities.EditProfile$6
+ com.witnip.bmi.Activities.EditProfile$7
+ com.witnip.bmi.Activities.EditProfile$8
+ com.witnip.bmi.Activities.EditProfile$9
+ com.witnip.bmi.Activities.EditProfile$9$1
+com/witnip/bmi/Activities/BfpCalculation.java
+ com.witnip.bmi.Activities.BfpCalculation
+ com.witnip.bmi.Activities.BfpCalculation$1
+ com.witnip.bmi.Activities.BfpCalculation$2
+ com.witnip.bmi.Activities.BfpCalculation$3
+ com.witnip.bmi.Activities.BfpCalculation$4
+ com.witnip.bmi.Activities.BfpCalculation$5
+com/witnip/bmi/Activities/Logout.java
+ com.witnip.bmi.Activities.Logout
+com/witnip/bmi/Activities/ResetPassword.java
+ com.witnip.bmi.Activities.ResetPassword
+ com.witnip.bmi.Activities.ResetPassword$1
+ com.witnip.bmi.Activities.ResetPassword$1$1
+com/witnip/bmi/Activities/Splash.java
+ com.witnip.bmi.Activities.Splash
+ com.witnip.bmi.Activities.Splash$1
+com/witnip/bmi/Activities/CaloriesCalculation.java
+ com.witnip.bmi.Activities.CaloriesCalculation
+ com.witnip.bmi.Activities.CaloriesCalculation$1
+ com.witnip.bmi.Activities.CaloriesCalculation$2
+ com.witnip.bmi.Activities.CaloriesCalculation$3
+ com.witnip.bmi.Activities.CaloriesCalculation$4
+ com.witnip.bmi.Activities.CaloriesCalculation$5
+ com.witnip.bmi.Activities.CaloriesCalculation$6
+com/witnip/bmi/Activities/FeedBack.java
+ com.witnip.bmi.Activities.FeedBack
+com/witnip/bmi/Activities/SetUpActivity.java
+ com.witnip.bmi.Activities.SetUpActivity
+ com.witnip.bmi.Activities.SetUpActivity$1
+ com.witnip.bmi.Activities.SetUpActivity$1$1
+ com.witnip.bmi.Activities.SetUpActivity$2
+ com.witnip.bmi.Activities.SetUpActivity$3
+ com.witnip.bmi.Activities.SetUpActivity$4
+ com.witnip.bmi.Activities.SetUpActivity$5
+ com.witnip.bmi.Activities.SetUpActivity$6
+ com.witnip.bmi.Activities.SetUpActivity$7
+ com.witnip.bmi.Activities.SetUpActivity$8
+ com.witnip.bmi.Activities.SetUpActivity$9
+ com.witnip.bmi.Activities.SetUpActivity$9$1
+com/witnip/bmi/Activities/WaterIntakeGraph.java
+ com.witnip.bmi.Activities.WaterIntakeGraph
+ com.witnip.bmi.Activities.WaterIntakeGraph$1
+com/witnip/bmi/Activities/BmiCalculation.java
+ com.witnip.bmi.Activities.BmiCalculation
+ com.witnip.bmi.Activities.BmiCalculation$1
+ com.witnip.bmi.Activities.BmiCalculation$2
+ com.witnip.bmi.Activities.BmiCalculation$3
+ com.witnip.bmi.Activities.BmiCalculation$4
+com/witnip/bmi/Model/WaterIntakeGraphModel.java
+ com.witnip.bmi.Model.WaterIntakeGraphModel
+com/witnip/bmi/Model/WaterIntake.java
+ com.witnip.bmi.Model.WaterIntake
+com/witnip/bmi/Activities/OnBoard.java
+ com.witnip.bmi.Activities.OnBoard
+ com.witnip.bmi.Activities.OnBoard$1
+ com.witnip.bmi.Activities.OnBoard$2
+ com.witnip.bmi.Activities.OnBoard$3
+com/witnip/bmi/Activities/Profile.java
+ com.witnip.bmi.Activities.Profile
+ com.witnip.bmi.Activities.Profile$1
+ com.witnip.bmi.Activities.Profile$2
+com/witnip/bmi/Activities/BmiResult.java
+ com.witnip.bmi.Activities.BmiResult
+com/witnip/bmi/Activities/WeightTracker.java
+ com.witnip.bmi.Activities.WeightTracker
+com/witnip/bmi/DatePicker/DatePickerFragment.java
+ com.witnip.bmi.DatePicker.DatePickerFragment
+com/witnip/bmi/Activities/IdealWeightResult.java
+ com.witnip.bmi.Activities.IdealWeightResult
+com/witnip/bmi/BMI.java
+ com.witnip.bmi.BMI
+com/witnip/bmi/Activities/Login.java
+ com.witnip.bmi.Activities.Login
+ com.witnip.bmi.Activities.Login$1
+ com.witnip.bmi.Activities.Login$2
+ com.witnip.bmi.Activities.Login$3
+ com.witnip.bmi.Activities.Login$4
+ com.witnip.bmi.Activities.Login$5
+ com.witnip.bmi.Activities.Login$6
+ com.witnip.bmi.Activities.Login$7
+ com.witnip.bmi.Activities.Login$8
+ com.witnip.bmi.Activities.Login$9
+com/witnip/bmi/Adapters/SliderAdapter.java
+ com.witnip.bmi.Adapters.SliderAdapter
+com/witnip/bmi/Activities/About.java
+ com.witnip.bmi.Activities.About
+com/witnip/bmi/Activities/BfpResult.java
+ com.witnip.bmi.Activities.BfpResult
+com/witnip/bmi/FirebaseDatabaseHandler.java
+ com.witnip.bmi.FirebaseDatabaseHandler
+ com.witnip.bmi.FirebaseDatabaseHandler$1
+ com.witnip.bmi.FirebaseDatabaseHandler$2
+ com.witnip.bmi.FirebaseDatabaseHandler$2$1
+ com.witnip.bmi.FirebaseDatabaseHandler$3
+com/witnip/bmi/Model/User.java
+ com.witnip.bmi.Model.User
+com/witnip/bmi/Model/WaterIntakeModel.java
+ com.witnip.bmi.Model.WaterIntakeModel
+com/witnip/bmi/Activities/WaterIntake.java
+ com.witnip.bmi.Activities.WaterIntake
+ com.witnip.bmi.Activities.WaterIntake$1
+ com.witnip.bmi.Activities.WaterIntake$2
+ com.witnip.bmi.Activities.WaterIntake$3
+ com.witnip.bmi.Activities.WaterIntake$4
+ com.witnip.bmi.Activities.WaterIntake$5
+ com.witnip.bmi.Activities.WaterIntake$6
+ com.witnip.bmi.Activities.WaterIntake$7
+ com.witnip.bmi.Activities.WaterIntake$8
+com/witnip/bmi/ui/home/HomeFragment.java
+ com.witnip.bmi.ui.home.HomeFragment
+ com.witnip.bmi.ui.home.HomeFragment$1
+ com.witnip.bmi.ui.home.HomeFragment$10
+ com.witnip.bmi.ui.home.HomeFragment$11
+ com.witnip.bmi.ui.home.HomeFragment$12
+ com.witnip.bmi.ui.home.HomeFragment$13
+ com.witnip.bmi.ui.home.HomeFragment$2
+ com.witnip.bmi.ui.home.HomeFragment$3
+ com.witnip.bmi.ui.home.HomeFragment$4
+ com.witnip.bmi.ui.home.HomeFragment$5
+ com.witnip.bmi.ui.home.HomeFragment$6
+ com.witnip.bmi.ui.home.HomeFragment$7
+ com.witnip.bmi.ui.home.HomeFragment$8
+ com.witnip.bmi.ui.home.HomeFragment$9
+com/witnip/bmi/Activities/Register.java
+ com.witnip.bmi.Activities.Register
+ com.witnip.bmi.Activities.Register$1
+ com.witnip.bmi.Activities.Register$2
+com/witnip/bmi/Activities/Share.java
+ com.witnip.bmi.Activities.Share
+com/witnip/bmi/Dialog/WaterDialog.java
+ com.witnip.bmi.Dialog.WaterDialog
+ com.witnip.bmi.Dialog.WaterDialog$1
+ com.witnip.bmi.Dialog.WaterDialog$2
+ com.witnip.bmi.Dialog.WaterDialog$WaterDialogListener
+com/witnip/bmi/Activities/Diet.java
+ com.witnip.bmi.Activities.Diet
+com/witnip/bmi/Activities/MainActivity.java
+ com.witnip.bmi.Activities.MainActivity
+ com.witnip.bmi.Activities.MainActivity$1
+ com.witnip.bmi.Activities.MainActivity$1$1
+ com.witnip.bmi.Activities.MainActivity$2
+ com.witnip.bmi.Activities.MainActivity$3
+com/witnip/bmi/Adapters/WaterIntakeAdapter.java
+ com.witnip.bmi.Adapters.WaterIntakeAdapter
+ com.witnip.bmi.Adapters.WaterIntakeAdapter$WaterIntakeViewHolder
+com/witnip/bmi/Activities/WeightGoal.java
+ com.witnip.bmi.Activities.WeightGoal
+ com.witnip.bmi.Activities.WeightGoal$1
+ com.witnip.bmi.Activities.WeightGoal$2
+ com.witnip.bmi.Activities.WeightGoal$3
+ com.witnip.bmi.Activities.WeightGoal$4
+ com.witnip.bmi.Activities.WeightGoal$5
