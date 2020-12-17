@@ -52,6 +52,10 @@
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_dob.png"
     },
     {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_bmi.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_google.xml.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\drawable\\button_google.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_height.xml.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_height.xml"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_weight_tracker_list.xml.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\layout\\weight_tracker_list.xml"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calorie.png.flat",
@@ -158,6 +166,10 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_feedback.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_feedback.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_bmi.png"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_google.png.flat",
@@ -312,6 +324,10 @@
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_profile.png"
     },
     {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_bmi.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_normal_weight.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_normal_weight.png"
     },
@@ -350,6 +366,14 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_profile.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_weight_tracker_dialog.xml.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\layout\\weight_tracker_dialog.xml"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_bmi.xml.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_bmi.xml"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_water_intake.xml.flat",
@@ -552,6 +576,10 @@
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_menu_gallery.png"
     },
     {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_bmi.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile_weight.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_profile_weight.png"
     },
@@ -710,6 +738,10 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_gender_male.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_gender_male.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_weight_tracker_graph.xml.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\layout\\activity_weight_tracker_graph.xml"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_athlete.png.flat",
@@ -1028,6 +1060,10 @@
         "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\layout\\water_dialog.xml"
     },
     {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_bmi.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_gallery.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_menu_gallery.png"
     },
@@ -1270,6 +1306,10 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_facebook.xml.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_facebook.xml"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_bmi.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_bmi.png"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_water_intake_list.xml.flat",
