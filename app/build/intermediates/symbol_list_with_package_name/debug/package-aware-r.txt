@@ -1781,7 +1781,6 @@ drawable ibw
 drawable ic_about_us
 drawable ic_activity_tracker
 drawable ic_athlete
-drawable ic_bmi
 drawable ic_daily_calorie_count
 drawable ic_diet
 drawable ic_dob
@@ -1962,7 +1961,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
 id barGraphWaterIntake
-id barGraphWeightTracker
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2003,12 +2001,6 @@ id buttonPanel
 id cache_measures
 id cancel_action
 id cancel_button
-id cbBedTime
-id cbBreakfast
-id cbBrunch
-id cbDinner
-id cbLunch
-id cbSnack
 id center
 id centerCrop
 id centerInside
@@ -2055,7 +2047,6 @@ id crop_image_menu_rotate_right
 id custom
 id customPanel
 id cut
-id cvEarlyMorning
 id dark
 id date_picker_actions
 id date_picker_scroll_day_full_date
@@ -2143,8 +2134,6 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivAverageLevel
-id ivAvg
-id ivBMI
 id ivBMR
 id ivBanner
 id ivCurrentWeight
@@ -2158,9 +2147,7 @@ id ivGender
 id ivGmDiet
 id ivGoalWeight
 id ivHeight
-id ivMax
 id ivMaxDCC
-id ivMin
 id ivMorbidlyObese
 id ivNormalWeight
 id ivObese
@@ -2181,17 +2168,11 @@ id layout
 id lblAge
 id lblAverageLevel
 id lblAverageLevelValue
-id lblAvg
-id lblAvgValue
-id lblBMI
 id lblBMR
 id lblBMRValue
 id lblBSA
-id lblBedTime
 id lblBfpResult
 id lblBmiResult
-id lblBreakfast
-id lblBrunch
 id lblCurrentWaterIntake
 id lblCurrentWeight
 id lblDCC
@@ -2205,8 +2186,6 @@ id lblDimHeight2
 id lblDimStartingWeight
 id lblDimWaist
 id lblDimWeight
-id lblDinner
-id lblEarlyMorning
 id lblEmail
 id lblErrorCurrentWeight
 id lblErrorDOB
@@ -2232,13 +2211,8 @@ id lblIBW1
 id lblImagePath
 id lblLBW
 id lblLogin
-id lblLunch
-id lblMax
 id lblMaxDCC
 id lblMaxDCCValue
-id lblMaxValue
-id lblMin
-id lblMinValue
 id lblMorbidlyObese
 id lblMorbidlyObeseValue
 id lblName
@@ -2261,7 +2235,6 @@ id lblRemainingWater
 id lblReset
 id lblResetPassword
 id lblSlogan
-id lblSnack
 id lblStartingWeight
 id lblTime
 id lblUnderWeight
@@ -2389,7 +2362,6 @@ id right_icon
 id right_side
 id rlAverageLevel
 id rlAverageLevel1
-id rlAvg
 id rlBMR
 id rlBSA
 id rlCurrentWeight
@@ -2409,10 +2381,7 @@ id rlGoogle
 id rlHeight
 id rlIBW
 id rlLBW
-id rlMax
 id rlMaxDCC
-id rlMid
-id rlMin
 id rlMorbidlyObese
 id rlMorbidlyObese1
 id rlNormalWeight
@@ -2435,7 +2404,6 @@ id rlWeightTracker
 id rounded
 id row_index_key
 id rvWaterIntake
-id rvWeightTracker
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2473,7 +2441,6 @@ id snackbar_text
 id snap
 id snapMargins
 id spCurrentWeight
-id spDays
 id spExerciseLevel
 id spGender
 id spGoalWeight
@@ -2550,13 +2517,8 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtAge
-id txtBedTime
-id txtBreakfast
-id txtBrunch
 id txtCurrentWeight
 id txtDescription
-id txtDinner
-id txtEarlyMorning
 id txtEmail
 id txtFirstName
 id txtGoalWeight
@@ -2565,14 +2527,11 @@ id txtHeight
 id txtHeight1
 id txtHeight2
 id txtLastName
-id txtLunch
 id txtPassword
-id txtSnack
 id txtStartingWeight
 id txtWaist
 id txtWaterIntake
 id txtWeight
-id txtWeightTracker
 id unchecked
 id uniform
 id unknown
@@ -2685,7 +2644,6 @@ layout activity_water_intake
 layout activity_water_intake_graph
 layout activity_weight_goal
 layout activity_weight_tracker
-layout activity_weight_tracker_graph
 layout app_bar_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -2785,8 +2743,6 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout water_dialog
 layout water_intake_list
-layout weight_tracker_dialog
-layout weight_tracker_list
 menu activity_main_drawer
 menu crop_image_menu
 menu main
@@ -2831,10 +2787,7 @@ string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string banner
-string bed_time
 string bottom_sheet_behavior
-string breakfast
-string brunch
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2890,8 +2843,6 @@ string crop_image_menu_flip_vertically
 string crop_image_menu_rotate_left
 string crop_image_menu_rotate_right
 string default_web_client_id
-string dinner
-string early_morning
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2913,7 +2864,6 @@ string icon_content_description
 string item_view_role_description
 string left_arrow
 string logout
-string lunch
 string material_slider_range_end
 string material_slider_range_start
 string menu_about
@@ -2975,7 +2925,6 @@ string project_id
 string right_arrow
 string search_menu_title
 string share
-string snack
 string status_bar_notification_info_overflow
 string user_name
 style AlertDialog_AppCompat

@@ -13,8 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.WeightTrackerGraph"></activity>
-        <activity android:name=".Activities.WaterIntakeGraph" />
+        <activity android:name=".Activities.WaterIntakeGraph"></activity>
         <activity
             android:name=".Activities.WeightTracker"
             android:label="Weight Tracker" />
@@ -63,9 +62,8 @@
         <activity
             android:name=".Activities.Register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Activities.Profile"
-            android:label="Profile" />
+        <activity android:name=".Activities.Profile"
+            android:label="Profile"/>
         <activity
             android:name=".Activities.OnBoard"
             android:theme="@style/AppTheme.NoActionBar" />

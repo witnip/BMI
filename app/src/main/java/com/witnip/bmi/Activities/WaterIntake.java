@@ -49,6 +49,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
     WaterIntakeAdapter adapter;
 
     private FirebaseAuth mAuth;
+    private ProgressDialog mProgress;
     private DatabaseReference mDatabaseUser;
 
     ArrayList<WaterIntakeModel> waterIntakeList;

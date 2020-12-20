@@ -26,7 +26,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.witnip.bmi.Activities.WeightTrackerGraph" />
         <activity android:name="com.witnip.bmi.Activities.WaterIntakeGraph" />
         <activity
             android:name="com.witnip.bmi.Activities.WeightTracker"
