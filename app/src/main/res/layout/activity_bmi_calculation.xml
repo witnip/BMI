@@ -80,6 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/txtHeight2"
             android:layout_toEndOf="@id/txtHeight2"
+            android:layout_toRightOf="@id/txtHeight2"
             android:text="in"
             android:textSize="12sp" />
 
@@ -89,6 +90,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:backgroundTint="@color/colorPrimary"
             tools:targetApi="lollipop" />

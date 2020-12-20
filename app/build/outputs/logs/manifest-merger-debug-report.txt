@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\757480c9f43fb6e72b7075c514a6d24a\jetified-android-image-cropper-2.8.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\75481e4f325e3678b01ca7833508255c\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\299f5da7d401a5fbb6b720f680ce848b\navigation-ui-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -91,20 +91,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nizam\.gradle\ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\9e093b173e0d75d429119beb7e212738\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\57b5ae7b4c1e8222c5e1793edd39aefa\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\3ff8daaff46f50fe53f3172146a383ae\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
-INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 	package
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-124:12
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:11-69
@@ -139,7 +139,7 @@ ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:9:5-122:19
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:9:5-120:19
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -222,226 +222,222 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Nizam\.gr
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:15:9-40
-activity#com.witnip.bmi.Activities.WeightTrackerGraph
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:9-76
-	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:19-64
 activity#com.witnip.bmi.Activities.WaterIntakeGraph
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:17:9-65
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:9-74
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:17:19-62
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:19-62
 activity#com.witnip.bmi.Activities.WeightTracker
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:18:9-20:46
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:17:9-19:46
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:20:13-43
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:19:13-43
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:19:13-53
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:18:13-53
 activity#com.witnip.bmi.Activities.WaterIntake
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:21:9-23:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:20:9-22:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:23:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:22:13-51
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:21:13-51
 activity#com.witnip.bmi.Activities.IdealWeightResult
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:24:9-26:51
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:23:9-25:51
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:26:13-48
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:25:13-48
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:25:13-57
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:24:13-57
 activity#com.witnip.bmi.Activities.CaloriesCalculation
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:27:9-29:40
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:28:13-59
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:27:13-59
 activity#com.witnip.bmi.Activities.IdealWeightCalculation
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:30:9-32:44
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:29:9-31:44
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:31:13-41
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:31:13-62
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:30:13-62
 activity#com.witnip.bmi.Activities.BfpResult
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:33:9-35:42
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:32:9-34:42
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:35:13-39
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:34:13-39
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:33:13-49
 activity#com.witnip.bmi.Activities.BfpCalculation
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:36:9-38:47
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:35:9-37:47
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:38:13-44
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:37:13-44
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:37:13-54
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:36:13-54
 activity#com.witnip.bmi.Activities.WeightGoal
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:39:9-41:43
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:38:9-40:43
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:41:13-40
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:40:13-40
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:40:13-50
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:39:13-50
 activity#com.witnip.bmi.Activities.Splash
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:42:9-50:20
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:41:9-49:20
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:43:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:43:13-46
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:42:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:45:13-49:29
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:44:13-48:29
 action#android.intent.action.MAIN
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:46:17-69
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:46:25-66
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:48:17-77
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:47:17-77
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:48:27-74
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:47:27-74
 activity#com.witnip.bmi.Activities.Share
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:51:9-54:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:50:9-53:59
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:53:13-34
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:52:13-34
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:54:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:53:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:52:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:51:13-45
 activity#com.witnip.bmi.Activities.SetUpActivity
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:55:9-58:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:54:9-57:59
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:57:13-34
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:56:13-34
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:58:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:57:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:56:13-53
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:55:13-53
 activity#com.witnip.bmi.Activities.ResetPassword
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:59:9-62:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:58:9-61:59
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:61:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:60:13-45
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:62:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:60:13-53
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:59:13-53
 activity#com.witnip.bmi.Activities.Register
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:63:9-65:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:62:9-64:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:65:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:64:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:64:13-48
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:63:13-48
 activity#com.witnip.bmi.Activities.Profile
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:66:9-68:39
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:65:9-66:38
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:68:13-36
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:66:13-36
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:67:13-47
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:65:19-53
 activity#com.witnip.bmi.Activities.OnBoard
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:69:9-71:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:67:9-69:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:71:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:69:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:70:13-47
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:68:13-47
 activity#com.witnip.bmi.Activities.Logout
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:72:9-74:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:70:9-72:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:74:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:72:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:73:13-46
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:71:13-46
 activity#com.witnip.bmi.Activities.Login
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:75:9-77:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:73:9-75:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:77:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:75:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:76:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:74:13-45
 activity#com.witnip.bmi.Activities.FeedBack
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:78:9-57
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:76:9-57
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:78:19-54
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:76:19-54
 activity#com.witnip.bmi.Activities.EditProfile
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:79:9-81:44
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:77:9-79:44
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:81:13-41
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:79:13-41
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:80:13-51
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:78:13-51
 activity#com.witnip.bmi.Activities.Diet
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:82:9-84:36
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:80:9-82:36
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:84:13-33
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:82:13-33
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:83:13-44
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:81:13-44
 activity#com.witnip.bmi.Activities.BmiResult
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:85:9-87:42
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:83:9-85:42
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:87:13-39
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:85:13-39
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:86:13-49
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:84:13-49
 activity#com.witnip.bmi.Activities.BmiCalculation
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:88:9-90:35
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:86:9-88:35
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:90:13-32
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:88:13-32
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:89:13-54
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:87:13-54
 activity#com.witnip.bmi.Activities.About
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:91:9-93:37
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:89:9-91:37
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:93:13-34
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:91:13-34
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:92:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:90:13-45
 activity#com.witnip.bmi.Activities.MainActivity
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:94:9-97:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:92:9-95:59
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:96:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:94:13-45
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:97:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:95:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:95:13-52
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:93:13-52
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:99:9-101:55
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:97:9-99:55
 	android:value
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:101:13-52
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:99:13-52
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:100:13-58
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:98:13-58
 activity#com.facebook.FacebookActivity
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:103:9-106:48
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:101:9-104:48
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 	android:label
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:106:13-45
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:104:13-45
 	android:configChanges
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:105:13-96
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:103:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:104:13-57
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:102:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:107:9-118:20
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:105:9-116:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 	tools:node
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:38:13-31
 	android:exported
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:109:13-36
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:107:13-36
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:108:13-58
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:106:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:110:13-117:29
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:108:13-115:29
 action#android.intent.action.VIEW
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:111:17-69
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:109:17-69
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:111:25-66
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:109:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:113:17-76
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:111:17-76
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:113:27-73
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:111:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:114:17-78
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:112:17-78
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:114:27-75
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:112:27-75
 data
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:116:17-75
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:114:17-75
 	android:scheme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:116:23-72
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:114:23-72
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:119:9-121:59
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:117:9-119:59
 	android:theme
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:121:13-56
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:119:13-56
 	android:name
-		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:120:13-76
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:118:13-76
 uses-sdk
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml

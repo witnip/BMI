@@ -3,24 +3,16 @@ package com.witnip.bmi.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.witnip.bmi.R;
 
-public class Diet extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
-    TextView txtEarlyMorning,txtBreakfast,txtBrunch,txtLunch,txtSnack,txtDinner,txtBedTime;
-    Spinner spDays;
+public class Diet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
+<<<<<<< HEAD
 
         txtEarlyMorning = findViewById(R.id.txtEarlyMorning);
         txtBreakfast = findViewById(R.id.txtBreakfast);
@@ -174,5 +166,7 @@ public class Diet extends AppCompatActivity implements AdapterView.OnItemSelecte
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
         Toast.makeText(this, "No Day is selected", Toast.LENGTH_SHORT).show();
+=======
+>>>>>>> 05a82eae599a5c8bbe4574911f9861259c51891a
     }
 }

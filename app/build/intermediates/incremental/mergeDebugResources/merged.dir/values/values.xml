@@ -1110,10 +1110,7 @@
     <string name="app_name">Fitness Ensure</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="banner">Banner</string>
-    <string name="bed_time">Bed Time (11:00)</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="breakfast">Breakfast (8:30 - 9:30)</string>
-    <string name="brunch">Brunch (11:00 - 12:00)</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
@@ -1168,9 +1165,7 @@
     <string name="crop_image_menu_flip_vertically">Flip vertically</string>
     <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
     <string name="crop_image_menu_rotate_right">Rotate</string>
-    <string name="default_web_client_id" translatable="false">88775027995-t4enr9otchc5bj5m7be52610afffgrks.apps.googleusercontent.com</string>
-    <string name="dinner">Dinner (8:30 - 9:30)</string>
-    <string name="early_morning">Early Morning (6:30 - 7.30)</string>
+    <string name="default_web_client_id" translatable="false">394985465921-ag020sdplcufhkofuseg2j5k201vea1t.apps.googleusercontent.com</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -1178,13 +1173,13 @@
     <string name="facebook_app_id">2651249698529496</string>
     <string name="fb_login_protocol_scheme">fb2651249698529496</string>
     <string name="feedback">FeedBack</string>
-    <string name="firebase_database_url" translatable="false">https://fitness-ensure-296917.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">88775027995</string>
+    <string name="firebase_database_url" translatable="false">https://fitness-ensure-e44b6.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">394985465921</string>
     <string name="good_morning">Good Morning,</string>
-    <string name="google_api_key" translatable="false">AIzaSyCeCeaxQN7JjGRjKiLWSgGamNYNN4mJs2Y</string>
-    <string name="google_app_id" translatable="false">1:88775027995:android:ac21f210d2a85f816c77be</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCeCeaxQN7JjGRjKiLWSgGamNYNN4mJs2Y</string>
-    <string name="google_storage_bucket" translatable="false">fitness-ensure-296917.appspot.com</string>
+    <string name="google_api_key" translatable="false">AIzaSyBBb8OoJjYsadYq_QQsTS1knxMg1KhghjA</string>
+    <string name="google_app_id" translatable="false">1:394985465921:android:c407478990b7d76d273ec0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBBb8OoJjYsadYq_QQsTS1knxMg1KhghjA</string>
+    <string name="google_storage_bucket" translatable="false">fitness-ensure-e44b6.appspot.com</string>
     <string name="height">Height</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home_second">Home Second</string>
@@ -1192,7 +1187,6 @@
     <string name="item_view_role_description">Tab</string>
     <string name="left_arrow">Left Arrow</string>
     <string name="logout">Logout</string>
-    <string name="lunch">Lunch (1:30 - 2:30)</string>
     <string description="Content description for the thumb with the maximum value in a Range slider. [CHAR_LIMIT=NONE]" name="material_slider_range_end">Range end, </string>
     <string description="Content description for the thumb with the minimum value in a Range slider. [CHAR_LIMIT=NONE]" name="material_slider_range_start">Range start, </string>
     <string name="menu_about">About</string>
@@ -1250,11 +1244,10 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="pick_image_intent_chooser_title">Select source</string>
     <string name="profile">Profile</string>
-    <string name="project_id" translatable="false">fitness-ensure-296917</string>
+    <string name="project_id" translatable="false">fitness-ensure-e44b6</string>
     <string name="right_arrow">Right Arrow</string>
     <string name="search_menu_title">Search</string>
     <string name="share">Share</string>
-    <string name="snack">Snack (4:30 - 5:30)</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="user_name">User Name</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

@@ -84,16 +84,6 @@ com/witnip/bmi/Activities/BmiResult.java
  com.witnip.bmi.Activities.BmiResult
 com/witnip/bmi/Activities/WeightTracker.java
  com.witnip.bmi.Activities.WeightTracker
- com.witnip.bmi.Activities.WeightTracker$1
- com.witnip.bmi.Activities.WeightTracker$2
- com.witnip.bmi.Activities.WeightTracker$3
- com.witnip.bmi.Activities.WeightTracker$3$1
- com.witnip.bmi.Activities.WeightTracker$3$1$1
- com.witnip.bmi.Activities.WeightTracker$3$2
- com.witnip.bmi.Activities.WeightTracker$4
- com.witnip.bmi.Activities.WeightTracker$5
-com/witnip/bmi/Model/WeightTrackerGraphModel.java
- com.witnip.bmi.Model.WeightTrackerGraphModel
 com/witnip/bmi/DatePicker/DatePickerFragment.java
  com.witnip.bmi.DatePicker.DatePickerFragment
 com/witnip/bmi/Activities/IdealWeightResult.java
@@ -111,8 +101,6 @@ com/witnip/bmi/Activities/Login.java
  com.witnip.bmi.Activities.Login$7
  com.witnip.bmi.Activities.Login$8
  com.witnip.bmi.Activities.Login$9
-com/witnip/bmi/CompareWeight.java
- com.witnip.bmi.CompareWeight
 com/witnip/bmi/Adapters/SliderAdapter.java
  com.witnip.bmi.Adapters.SliderAdapter
 com/witnip/bmi/Activities/About.java
@@ -125,9 +113,6 @@ com/witnip/bmi/FirebaseDatabaseHandler.java
  com.witnip.bmi.FirebaseDatabaseHandler$2
  com.witnip.bmi.FirebaseDatabaseHandler$2$1
  com.witnip.bmi.FirebaseDatabaseHandler$3
-com/witnip/bmi/Adapters/WeightTrackerAdapter.java
- com.witnip.bmi.Adapters.WeightTrackerAdapter
- com.witnip.bmi.Adapters.WeightTrackerAdapter$WeightTrackerViewHolder
 com/witnip/bmi/Model/User.java
  com.witnip.bmi.Model.User
 com/witnip/bmi/Model/WaterIntakeModel.java
@@ -142,11 +127,6 @@ com/witnip/bmi/Activities/WaterIntake.java
  com.witnip.bmi.Activities.WaterIntake$6
  com.witnip.bmi.Activities.WaterIntake$7
  com.witnip.bmi.Activities.WaterIntake$8
-com/witnip/bmi/Activities/WeightTrackerGraph.java
- com.witnip.bmi.Activities.WeightTrackerGraph
- com.witnip.bmi.Activities.WeightTrackerGraph$1
-com/witnip/bmi/Model/WeightTrackerModel.java
- com.witnip.bmi.Model.WeightTrackerModel
 com/witnip/bmi/ui/home/HomeFragment.java
  com.witnip.bmi.ui.home.HomeFragment
  com.witnip.bmi.ui.home.HomeFragment$1
@@ -162,11 +142,6 @@ com/witnip/bmi/ui/home/HomeFragment.java
  com.witnip.bmi.ui.home.HomeFragment$7
  com.witnip.bmi.ui.home.HomeFragment$8
  com.witnip.bmi.ui.home.HomeFragment$9
-com/witnip/bmi/Dialog/WeightDialog.java
- com.witnip.bmi.Dialog.WeightDialog
- com.witnip.bmi.Dialog.WeightDialog$1
- com.witnip.bmi.Dialog.WeightDialog$2
- com.witnip.bmi.Dialog.WeightDialog$WeightTrackerDialogListener
 com/witnip/bmi/Activities/Register.java
  com.witnip.bmi.Activities.Register
  com.witnip.bmi.Activities.Register$1

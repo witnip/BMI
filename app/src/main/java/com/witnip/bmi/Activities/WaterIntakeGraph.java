@@ -168,7 +168,7 @@ public class WaterIntakeGraph extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(WaterIntakeGraph.this, "Failed!!! to get Data", Toast.LENGTH_SHORT).show();
+
             }
         });
 

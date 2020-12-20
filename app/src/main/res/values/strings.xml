@@ -35,13 +35,6 @@
     <string name="_8_21"><![CDATA[8-21%<]]></string>
     <string name="_21_26">21-26%</string>
     <string name="_26"><![CDATA[<26%]]></string>
-    <string name="early_morning">Early Morning (6:30 - 7.30)</string>
-    <string name="breakfast">Breakfast (8:30 - 9:30)</string>
-    <string name="brunch">Brunch (11:00 - 12:00)</string>
-    <string name="lunch">Lunch (1:30 - 2:30)</string>
-    <string name="snack">Snack (4:30 - 5:30)</string>
-    <string name="dinner">Dinner (8:30 - 9:30)</string>
-    <string name="bed_time">Bed Time (11:00)</string>
 
     <!--    Gender Array-->
     <string-array name="gender">
