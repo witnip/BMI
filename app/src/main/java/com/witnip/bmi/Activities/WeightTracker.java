@@ -1,14 +1,40 @@
 package com.witnip.bmi.Activities;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.witnip.bmi.Adapters.WaterIntakeAdapter;
+import com.witnip.bmi.Adapters.WeightTrackerAdapter;
+import com.witnip.bmi.CompareWeight;
 import com.witnip.bmi.Dialog.WeightDialog;
+import com.witnip.bmi.Model.WaterIntakeModel;
+import com.witnip.bmi.Model.WeightTrackerModel;
 import com.witnip.bmi.R;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.Locale;
 
 public class WeightTracker extends AppCompatActivity implements WeightDialog.WeightTrackerDialogListener {
 
@@ -17,12 +43,16 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
 
     RecyclerView rvWeightTracker;
 
+    private FirebaseAuth mAuth;
+    private DatabaseReference mDatabaseUser;
+
+    ArrayList<WeightTrackerModel> trackerModels;
+    WeightTrackerAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight_tracker);
-<<<<<<< HEAD
-=======
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         lblMinValue = findViewById(R.id.lblMinValue);
@@ -167,11 +197,59 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
                 Toast.makeText(WeightTracker.this, "Failed!! to save data", Toast.LENGTH_SHORT).show();
             }
         });
->>>>>>> 474fc51... back button set
     }
 
     @Override
-    public void setWeight(Double weight) {
+    public void setWeight(final Double weight) {
+        String user_id = mAuth.getCurrentUser().getUid();
+        final DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
+        final DatabaseReference weightTrackerDB = currentUserDB.child("weightTracker");
+        final String date = new SimpleDateFormat("dd-MMMM-yyyy", Locale.getDefault()).format(new Date());
+        final String time = new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(new Date());
+        weightTrackerDB.addListenerForSingleValueEvent(new ValueEventListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.hasChild("currentDate")){
+                    String currentDate = snapshot.child("currentDate").getValue().toString();
+                    if(!currentDate.equals(date)){
+                        weightTrackerDB.child("currentDate").setValue(date);
+                        weightTrackerDB.child("currentTime").setValue(time);
+                        weightTrackerDB.child("currentWeight").setValue(weight);
+                        currentUserDB.child("CurrentWeight").setValue(weight);
+                        long unixDate = Instant.now().getEpochSecond();
+                        DatabaseReference dailyWaterIntake = weightTrackerDB.child("daily");
+                        DatabaseReference dateWiseData = dailyWaterIntake.child(""+unixDate);
+                        dateWiseData.child("date").setValue(date);
+                        dateWiseData.child("time").setValue(time);
+                        dateWiseData.child("weight").setValue(weight);
+                    }else if(currentDate.equals(date)){
+                        Toast.makeText(WeightTracker.this, "You weight saved for today. Try tomorrow!!!", Toast.LENGTH_SHORT).show();
+                    }
+                }else if(!snapshot.hasChild("currentDate")){
+                    weightTrackerDB.child("currentDate").setValue(date);
+                    weightTrackerDB.child("currentTime").setValue(time);
+                    weightTrackerDB.child("currentWeight").setValue(weight);
+                    currentUserDB.child("CurrentWeight").setValue(weight);
+                    long unixDate = Instant.now().getEpochSecond();
+                    DatabaseReference dailyWaterIntake = weightTrackerDB.child("daily");
+                    DatabaseReference dateWiseData = dailyWaterIntake.child(""+unixDate);
+                    dateWiseData.child("date").setValue(date);
+                    dateWiseData.child("time").setValue(time);
+                    dateWiseData.child("weight").setValue(weight);
+                }
 
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void openDialog(){
+        WeightDialog weightDialog = new WeightDialog();
+        weightDialog.show(getSupportFragmentManager(),"Weight Tracker");
     }
 }
