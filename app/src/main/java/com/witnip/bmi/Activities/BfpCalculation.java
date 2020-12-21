@@ -39,6 +39,7 @@ public class BfpCalculation extends AppCompatActivity implements DatePickerDialo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bfp_calculation);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ivGender = findViewById(R.id.ivGender);
         lblGender = findViewById(R.id.lblGender);

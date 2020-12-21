@@ -76,6 +76,7 @@ public class SetUpActivity extends AppCompatActivity implements DatePickerDialog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_up);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         profileImage = findViewById(R.id.profile_image);
         lblName = findViewById(R.id.lblName);

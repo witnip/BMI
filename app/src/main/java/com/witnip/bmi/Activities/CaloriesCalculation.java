@@ -42,6 +42,7 @@ public class CaloriesCalculation extends AppCompatActivity implements DatePicker
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calories_calculation);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ivGender = findViewById(R.id.ivGender);
         lblGender = findViewById(R.id.lblGender);

@@ -22,6 +22,7 @@ public class IdealWeightResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ideal_weight_result);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         lblIBW1 = findViewById(R.id.lblIBW1);
         lblIBW = findViewById(R.id.lblIBW);

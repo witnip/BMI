@@ -76,6 +76,7 @@ public class EditProfile extends AppCompatActivity implements DatePickerDialog.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         profileImage = findViewById(R.id.profile_image);
         lblName = findViewById(R.id.lblName);

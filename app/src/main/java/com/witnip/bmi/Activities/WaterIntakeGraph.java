@@ -63,6 +63,7 @@ public class WaterIntakeGraph extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_intake_graph);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         barGraphWaterIntake = findViewById(R.id.barGraphWaterIntake);
 

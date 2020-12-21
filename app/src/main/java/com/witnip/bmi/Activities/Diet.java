@@ -13,6 +13,10 @@ public class Diet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+>>>>>>> 474fc51... back button set
 
         txtEarlyMorning = findViewById(R.id.txtEarlyMorning);
         txtBreakfast = findViewById(R.id.txtBreakfast);

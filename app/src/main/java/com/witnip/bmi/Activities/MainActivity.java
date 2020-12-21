@@ -162,10 +162,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent gotoShare = new Intent(MainActivity.this,Share.class);
                 startActivity(gotoShare);
                 break;
-            case R.id.nav_feedback:
-                Intent gotoFeedback = new Intent(MainActivity.this,FeedBack.class);
-                startActivity(gotoFeedback);
-                break;
             case R.id.nav_logout:
                 Intent gotoLogout = new Intent(MainActivity.this,Logout.class);
                 startActivity(gotoLogout);

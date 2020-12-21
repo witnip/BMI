@@ -32,6 +32,7 @@ public class IdealWeightCalculation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ideal_weight_calculatio);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ivGender = findViewById(R.id.ivGender);
         lblGender = findViewById(R.id.lblGender);
