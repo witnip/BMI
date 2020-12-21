@@ -13,16 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-<<<<<<< HEAD
         <activity android:name=".Activities.WeightTrackerGraph"
             android:screenOrientation="portrait"/>
         <activity android:name=".Activities.WaterIntakeGraph"
             android:screenOrientation="portrait"/>
-=======
         <activity android:name=".Activities.WaterIntakeGraph"></activity>
->>>>>>> 05a82eae599a5c8bbe4574911f9861259c51891a
-=======
         <activity
             android:name=".Activities.WeightTrackerGraph"
             android:screenOrientation="portrait"
@@ -31,7 +26,6 @@
             android:name=".Activities.WaterIntakeGraph"
             android:screenOrientation="portrait"
             android:parentActivityName=".Activities.WaterIntake"/>
->>>>>>> 474fc51... back button set
         <activity
             android:name=".Activities.WeightTracker"
             android:label="Weight Tracker"
@@ -101,20 +95,15 @@
             android:parentActivityName=".Activities.Login"/>
         <activity
             android:name=".Activities.Register"
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Activities.Profile"
             android:label="Profile"
             android:screenOrientation="portrait"/>
-=======
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.Profile"
             android:label="Profile"/>
->>>>>>> 05a82eae599a5c8bbe4574911f9861259c51891a
-=======
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -122,7 +111,6 @@
             android:label="Profile"
             android:screenOrientation="portrait"
             android:parentActivityName=".Activities.MainActivity"/>
->>>>>>> 474fc51... back button set
         <activity
             android:name=".Activities.OnBoard"
             android:screenOrientation="portrait"
