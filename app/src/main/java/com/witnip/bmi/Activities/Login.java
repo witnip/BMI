@@ -221,7 +221,7 @@ public class Login extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(Login.this, "Eamil : "+mAuth.getCurrentUser().getEmail()+" \nalready exits", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Eamil : already exits", Toast.LENGTH_SHORT).show();
                             mProgress.dismiss();
                             btnFacebookLogin.setEnabled(true);
                         }
@@ -287,7 +287,7 @@ public class Login extends AppCompatActivity {
                         String email = user.getEmail();
 
                         String Username = user.getDisplayName();
-                        String parts[] = Username.split(" ", 2);
+                        String[] parts = Username.split(" ", 2);
                         String firstName = parts[0];
                         String lastName = parts[1];
 
@@ -300,6 +300,7 @@ public class Login extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Log.e(TAG, "onCancelled: "+databaseError);
                 }
             });
         }

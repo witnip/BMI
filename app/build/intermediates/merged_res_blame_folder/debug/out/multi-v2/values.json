@@ -267,7 +267,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\b9f1b4b677bf5d307d73018b8a082d97\\navigation-fragment-2.3.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\35ad7d68ac6a2da9c4df6cc9c85c694e\\navigation-fragment-2.3.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,9",
                         "startColumns": "4,4,4,4",
@@ -461,6 +461,42 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\09f0c609eb81831771fa2dc170fadd15\\navigation-ui-2.3.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,108,184",
+                        "endColumns": "52,75,86",
+                        "endOffsets": "103,179,266"
+                    },
+                    "to": {
+                        "startLines": "1053,1238,1239",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "63083,82064,82140",
+                        "endColumns": "52,75,86",
+                        "endOffsets": "63131,82135,82222"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\4dfd0408f245461c5f009cd47ec4609e\\navigation-runtime-2.3.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,10,13",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,108,412,527",
+                        "endLines": "2,9,12,15",
+                        "endColumns": "52,24,24,24",
+                        "endOffsets": "103,407,522,637"
+                    },
+                    "to": {
+                        "startLines": "1012,5035,7062,7068",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "60975,332911,460658,460900",
+                        "endLines": "1012,5041,7064,7070",
+                        "endColumns": "52,24,24,24",
+                        "endOffsets": "61023,333210,460768,461010"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\cde53e4a9f1f3baa911b96dde6c69636\\jetified-scrolldatepicker-0.0.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,8,9,6",
@@ -542,6 +578,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\cb0865da20318e5dc3b1f5d5c9115c1f\\navigation-runtime-2.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,10,13",
@@ -570,6 +607,8 @@
                     }
                 },
                 {
+=======
+>>>>>>> 176e029... you can login without upload profile pick
                     "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "4,16,10,8,5,15,12,14,13,2,3,6,9,11,7",
@@ -584,6 +623,25 @@
                         "startOffsets": "24498,24544,24589,24637,24681,24725,24778,24830,24875,24925,24972,25023,25068,25121,25172",
                         "endColumns": "45,44,47,43,43,52,51,44,49,46,50,44,52,50,44",
                         "endOffsets": "24539,24584,24632,24676,24720,24773,24825,24870,24920,24967,25018,25063,25116,25167,25212"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\37feb11f81e89b04993c06b91802d939\\navigation-common-2.3.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,13,19,25,28",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,584,828,1075,1208",
+                        "endLines": "12,18,24,27,31",
+                        "endColumns": "24,24,24,24,24",
+                        "endOffsets": "579,823,1070,1203,1340"
+                    },
+                    "to": {
+                        "startLines": "7036,7047,7053,7059,7119",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "459505,460034,460278,460525,464236",
+                        "endLines": "7046,7052,7058,7061,7122",
+                        "endColumns": "24,24,24,24,24",
+                        "endOffsets": "460029,460273,460520,460653,464368"
                     }
                 },
                 {
@@ -660,6 +718,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\1ba6c7b2d22c949fd82151d17ce709f7\\navigation-common-2.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,13,19,25,28",
@@ -708,6 +767,8 @@
                     }
                 },
                 {
+=======
+>>>>>>> 176e029... you can login without upload profile pick
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\b8ee54378c52650838ddb3b0567cade3\\recyclerview-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
@@ -764,6 +825,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\299f5da7d401a5fbb6b720f680ce848b\\navigation-ui-2.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -787,6 +849,8 @@
                     }
                 },
                 {
+=======
+>>>>>>> 176e029... you can login without upload profile pick
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\76975b0e1f2bad85ddf2083ee0a001c7\\jetified-circleimageview-3.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",

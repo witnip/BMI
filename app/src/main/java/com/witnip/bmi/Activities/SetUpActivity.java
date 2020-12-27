@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -76,7 +77,7 @@ public class SetUpActivity extends AppCompatActivity implements DatePickerDialog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_up);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         profileImage = findViewById(R.id.profile_image);
         lblName = findViewById(R.id.lblName);
@@ -458,7 +459,7 @@ public class SetUpActivity extends AppCompatActivity implements DatePickerDialog
                     mProgress.setMessage("finishing setup...");
                     mProgress.show();
 
-                    StorageReference filepath = mStorage.child(mImageUri.getLastPathSegment());
+                    StorageReference filepath = mStorage.child(mAuth.getCurrentUser().getUid()+".jpg");
                     filepath.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -507,7 +508,45 @@ public class SetUpActivity extends AppCompatActivity implements DatePickerDialog
                     });
 
                 } else {
-                    Toast.makeText(this, "Please select profile image!!!", Toast.LENGTH_SHORT).show();
+                    mStorage.child("userDefault.png").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            String imageUrl = uri.toString();
+                            //createNewPost(imageUrl);
+                            gender = spGender.getSelectedItem().toString();
+                            //Height in inches
+                            height = getHeight();
+                            //Weight in kg
+                            weight = getWeight();
+                            //Waist in inches
+                            waist = getWaist();
+//                                            String profilePath = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
+                            String profilePath = uri.toString();
+                            String user_id = mAuth.getCurrentUser().getUid();
+                            DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
+                            currentUserDB.child("firstName").setValue(firstName);
+                            currentUserDB.child("lastName").setValue(lastName);
+                            currentUserDB.child("gender").setValue(gender);
+                            currentUserDB.child("age").setValue(age);
+                            currentUserDB.child("CurrentHeight").setValue(height);
+                            currentUserDB.child("CurrentWeight").setValue(weight);
+                            currentUserDB.child("CurrentWaist").setValue(waist);
+                            currentUserDB.child("profile").setValue(profilePath);
+
+                            mProgress.dismiss();
+
+                            Intent mainIntent = new Intent(SetUpActivity.this, MainActivity.class);
+                            mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(mainIntent);
+                            finish();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            // Handle any errors
+                            Log.e("Setup", "onFailure: "+exception );
+                        }
+                    });
                 }
         }
     }

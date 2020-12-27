@@ -32,7 +32,7 @@ public class IdealWeightResult extends AppCompatActivity {
         pbIBW = findViewById(R.id.pbIBW);
 
         Intent data = this.getIntent();
-        ibw = data.getDoubleExtra("bfp",0);
+        ibw = data.getDoubleExtra("ibw",0);
         lbw = data.getDoubleExtra("lbw",0);
         bsa = data.getDoubleExtra("bsa",0);
         setResult();

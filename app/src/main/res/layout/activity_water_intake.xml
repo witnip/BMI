@@ -5,12 +5,11 @@
     android:layout_height="match_parent"
     tools:context="com.witnip.bmi.Activities.WaterIntake">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbWaterIntake"
         android:layout_width="match_parent"
         android:layout_height="225dp"
-        android:background="@drawable/ic_water_intake_header"
-        tools:targetApi="lollipop">
+        android:background="@drawable/ic_water_intake_header">
 
         <TextView
             android:layout_width="match_parent"
@@ -21,7 +20,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="25sp" />
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
         android:layout_width="match_parent"

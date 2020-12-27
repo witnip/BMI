@@ -257,7 +257,7 @@ public class IdealWeightCalculation extends AppCompatActivity {
         double lbw = getLBW(gender,height,weight);
         double bsa = getBSA(gender,height,weight);
 
-        Intent gotoIBWResult = new Intent(this,BfpResult.class);
+        Intent gotoIBWResult = new Intent(this,IdealWeightResult.class);
         gotoIBWResult.putExtra("ibw",ibw);
         gotoIBWResult.putExtra("lbw",lbw);
         gotoIBWResult.putExtra("bsa",bsa);
@@ -268,18 +268,33 @@ public class IdealWeightCalculation extends AppCompatActivity {
     private double getBSA(String gender, double height, double weight) {
         double bsa = 0;
         bsa = Math.pow(weight,0.425) * Math.pow(height,0.725) * 0.007184;
+        bsa = Math.round(bsa * 100);
+        bsa = bsa / 100;
         return bsa;
     }
 
     private double getLBW(String gender, double height, double weight) {
         double lbw = 0;
-        double squre = Math.pow(weight, 2) / Math.pow(height, 2);
+        height = getHeightInCM(height);
+        double net  = weight/height;
+        double squre = Math.pow(net, 2);
         if(gender.equals("Male")){
             lbw = (1.1 * weight) - 128 * squre;
         }else if(gender.equals("Female")){
             lbw = (1.07 * weight) - 148 *   squre;
         }
+        lbw = Math.round(lbw * 100);
+        lbw = lbw / 100;
+
         return lbw;
+    }
+
+    private double getHeightInCM(double height) {
+        double h = 0;
+        h= height*2.54;
+        h = Math.round(h * 100);
+        h = h / 100;
+        return h;
     }
 
     private double getIBW(String gender, double height) {
@@ -289,6 +304,8 @@ public class IdealWeightCalculation extends AppCompatActivity {
         }else if(gender.equals("Female")){
             ibw = 49 + (1.7 * (height - 60));
         }
+        ibw = Math.round(ibw * 100);
+        ibw = ibw / 100;
         return ibw;
     }
 }

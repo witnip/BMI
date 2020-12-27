@@ -1777,6 +1777,7 @@ drawable gm_diet_banner
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home_banner
+drawable home_banner_2
 drawable ibw
 drawable ic_about_us
 drawable ic_activity_tracker
@@ -2205,6 +2206,7 @@ id lblForgotPassword
 id lblGender
 id lblGoal
 id lblGoalWeight
+id lblGreeting
 id lblHeight
 id lblIBW
 id lblIBW1
@@ -2254,6 +2256,9 @@ id lineWeight
 id linear
 id listMode
 id list_item
+id llBFP
+id llBMI
+id llBMIBFP
 id llBottom
 id llButton
 id llDots
@@ -2305,7 +2310,6 @@ id navName
 id navProfile
 id nav_about
 id nav_controller_view_tag
-id nav_feedback
 id nav_home
 id nav_host_fragment
 id nav_host_fragment_container
@@ -2517,6 +2521,14 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtAge
+<<<<<<< HEAD
+=======
+id txtBFP
+id txtBMI
+id txtBedTime
+id txtBreakfast
+id txtBrunch
+>>>>>>> 176e029... you can login without upload profile pick
 id txtCurrentWeight
 id txtDescription
 id txtEmail
@@ -2628,7 +2640,6 @@ layout activity_bmi_result
 layout activity_calories_calculation
 layout activity_diet
 layout activity_edit_profile
-layout activity_feed_back
 layout activity_ideal_weight_calculatio
 layout activity_ideal_weight_result
 layout activity_login

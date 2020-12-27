@@ -76,7 +76,7 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
         trackerModels = new ArrayList<>();
         rvWeightTracker.setLayoutManager(new LinearLayoutManager(this));
         setAvgMinMax();
-        setDailyWeight();
+        getDailyWeightList();
 
         btnViewGraph.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,10 +95,9 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
         weightTrackerDB.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                trackerModels.clear();
                 if(snapshot.hasChild("currentDate")) {
+                    trackerModels.clear();
                     daily.addValueEventListener(new ValueEventListener() {
-
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             double totalWeight = 0, maxWeight, minWeight, avgWeight;
@@ -150,7 +149,10 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             double CurrentWeight = Double.parseDouble(snapshot.child("CurrentWeight").getValue().toString());
                             double CurrentHeight = Double.parseDouble(snapshot.child("CurrentHeight").getValue().toString());
-                            double bmi = CurrentWeight/Math. pow(CurrentHeight,2);
+                            double height = CurrentHeight *2.54*0.01;
+                            height = Math.round(height * 100);
+                            height = height / 100;
+                            double bmi = CurrentWeight/Math. pow(height,2);
                             bmi = Math.round(bmi * 100);
                             bmi = bmi / 100;
                             lblMinValue.setText(String.format("%s", CurrentWeight));
@@ -174,7 +176,7 @@ public class WeightTracker extends AppCompatActivity implements WeightDialog.Wei
         });
     }
 
-    private void setDailyWeight() {
+    private void getDailyWeightList() {
         String user_id = mAuth.getCurrentUser().getUid();
         DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
         DatabaseReference weightTrackerDB = currentUserDB.child("weightTracker");

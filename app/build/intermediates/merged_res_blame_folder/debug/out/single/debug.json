@@ -308,6 +308,10 @@
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_splash_screen_1.png"
     },
     {
+        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_banner_2.png.flat",
+        "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\drawable\\home_banner_2.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_profile.png"
     },
@@ -918,10 +922,6 @@
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile_height.png.flat",
         "source": "D:\\Android_Workspace\\BMI\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_profile_height.png"
-    },
-    {
-        "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_feed_back.xml.flat",
-        "source": "D:\\Android_Workspace\\BMI\\app\\src\\main\\res\\layout\\activity_feed_back.xml"
     },
     {
         "merged": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_diet.xml.flat",

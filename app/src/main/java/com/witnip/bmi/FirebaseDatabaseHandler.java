@@ -142,6 +142,7 @@ public class FirebaseDatabaseHandler {
         setupIntent.putExtra("firstName",firstName);
         setupIntent.putExtra("lastName",lastName);
         setupIntent.putExtra("email",email);
+        setupIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         mContext.startActivity(setupIntent);
         ((Activity) mContext).finish();
     }

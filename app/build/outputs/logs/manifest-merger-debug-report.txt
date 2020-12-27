@@ -1,12 +1,19 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+=======
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+>>>>>>> 176e029... you can login without upload profile pick
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\757480c9f43fb6e72b7075c514a6d24a\jetified-android-image-cropper-2.8.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\75481e4f325e3678b01ca7833508255c\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\299f5da7d401a5fbb6b720f680ce848b\navigation-ui-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\09f0c609eb81831771fa2dc170fadd15\navigation-ui-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -15,7 +22,7 @@ MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\f65e7d690d0436991c66205f0487ed30\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-database:6.4.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\391b65d74db1cd9c0ec83bcbad234377\jetified-firebase-ui-database-6.4.0\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1f106be3704685663748f5430a93eceb\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b9f1b4b677bf5d307d73018b8a082d97\navigation-fragment-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\35ad7d68ac6a2da9c4df6cc9c85c694e\navigation-fragment-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b5ef0020a43feff1c05d154ec7e35542\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1b3eddc6944e5ddf4cc599a4765ab5cc\jetified-firebase-analytics-18.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:20.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1e516b41c11a3c77410f7ed5454fe678\jetified-firebase-auth-20.0.1\AndroidManifest.xml:17:1-83:12
@@ -68,9 +75,9 @@ MERGED from [androidx.customview:customview:1.1.0] C:\Users\Nizam\.gradle\caches
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\828e9e3cd00c64963bd14381033de3d1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\3467d450b76dd5e7b79c55f485a7f3f8\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\70d3062d6b824e97c1c02f159be3502d\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cb0865da20318e5dc3b1f5d5c9115c1f\navigation-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\4dfd0408f245461c5f009cd47ec4609e\navigation-runtime-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a1736cfb37f907a6771b9cb0f0608c80\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1ba6c7b2d22c949fd82151d17ce709f7\navigation-common-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\37feb11f81e89b04993c06b91802d939\navigation-common-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\750f1a1e9f5b24d221117033f9c85515\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b3a5c9a7da8061ed0e78250eefbef1d4\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
@@ -91,20 +98,34 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nizam\.gradle\ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\9e093b173e0d75d429119beb7e212738\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\57b5ae7b4c1e8222c5e1793edd39aefa\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\3ff8daaff46f50fe53f3172146a383ae\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
+<<<<<<< HEAD
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+=======
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+>>>>>>> 176e029... you can login without upload profile pick
 	package
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
+<<<<<<< HEAD
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-122:12
+=======
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:1-170:12
+>>>>>>> 176e029... you can login without upload profile pick
 		INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:2:11-69
@@ -139,7 +160,11 @@ ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:7:22-78
 application
+<<<<<<< HEAD
 ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:9:5-120:19
+=======
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:9:5-168:19
+>>>>>>> 176e029... you can login without upload profile pick
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:11:5-15:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -222,6 +247,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Nizam\.gr
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:15:9-40
+<<<<<<< HEAD
 activity#com.witnip.bmi.Activities.WaterIntakeGraph
 ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:9-74
 	android:name
@@ -394,9 +420,272 @@ ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:97:9-99:55
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:98:13-58
 activity#com.facebook.FacebookActivity
 ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:101:9-104:48
-MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
-MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
+=======
+activity#com.witnip.bmi.Activities.WeightTrackerGraph
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:16:9-19:69
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:18:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:19:13-67
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:17:13-58
+activity#com.witnip.bmi.Activities.WaterIntakeGraph
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:20:9-23:67
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:22:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:23:13-65
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:21:13-56
+activity#com.witnip.bmi.Activities.WeightTracker
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:24:9-28:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:27:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:28:13-66
 	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:25:13-53
+activity#com.witnip.bmi.Activities.WaterIntake
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:29:9-33:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:31:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:33:13-66
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:32:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:30:13-51
+activity#com.witnip.bmi.Activities.IdealWeightResult
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:34:9-38:78
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:37:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:38:13-76
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:36:13-48
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:35:13-57
+activity#com.witnip.bmi.Activities.CaloriesCalculation
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:39:9-43:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:42:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:43:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:40:13-59
+activity#com.witnip.bmi.Activities.IdealWeightCalculation
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:44:9-48:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:47:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:48:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:46:13-41
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:45:13-62
+activity#com.witnip.bmi.Activities.BfpResult
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:49:9-53:70
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:52:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:53:13-68
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:51:13-39
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:50:13-49
+activity#com.witnip.bmi.Activities.BfpCalculation
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:54:9-58:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:57:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:58:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:55:13-54
+activity#com.witnip.bmi.Activities.WeightGoal
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:59:9-63:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:62:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:63:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:61:13-40
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:60:13-50
+activity#com.witnip.bmi.Activities.Splash
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:64:9-73:20
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:66:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:67:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:65:13-46
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:68:13-72:29
+action#android.intent.action.MAIN
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:69:17-69
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:69:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:71:17-77
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:71:27-74
+activity#com.witnip.bmi.Activities.Share
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:74:9-78:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:77:13-49
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:76:13-34
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:78:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:75:13-45
+activity#com.witnip.bmi.Activities.SetUpActivity
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:79:9-84:61
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:82:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:84:13-59
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:81:13-34
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:83:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:80:13-53
+activity#com.witnip.bmi.Activities.ResetPassword
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:85:9-90:61
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:88:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:90:13-59
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:87:13-45
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:89:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:86:13-53
+activity#com.witnip.bmi.Activities.Register
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:91:9-94:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:93:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:94:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:92:13-48
+activity#com.witnip.bmi.Activities.Profile
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:95:9-99:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:98:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:99:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:97:13-36
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:96:13-47
+activity#com.witnip.bmi.Activities.OnBoard
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:100:9-103:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:102:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:103:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:101:13-47
+activity#com.witnip.bmi.Activities.Logout
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:104:9-107:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:106:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:107:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:105:13-46
+activity#com.witnip.bmi.Activities.Login
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:108:9-111:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:110:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:111:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:109:13-45
+activity#com.witnip.bmi.Activities.EditProfile
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:112:9-116:63
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:115:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:116:13-61
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:114:13-41
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:113:13-51
+activity#com.witnip.bmi.Activities.Diet
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:117:9-121:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:120:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:121:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:119:13-33
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:118:13-44
+activity#com.witnip.bmi.Activities.BmiResult
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:122:9-126:70
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:125:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:126:13-68
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:124:13-39
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:123:13-49
+activity#com.witnip.bmi.Activities.BmiCalculation
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:127:9-131:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:130:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:131:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:129:13-32
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:128:13-54
+activity#com.witnip.bmi.Activities.About
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:132:9-136:68
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:135:13-49
+	android:parentActivityName
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:136:13-66
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:134:13-34
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:133:13-45
+activity#com.witnip.bmi.Activities.MainActivity
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:137:9-141:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:140:13-49
+	android:label
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:139:13-45
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:141:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:138:13-52
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:143:9-145:55
+	android:value
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:145:13-52
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:144:13-58
+activity#com.facebook.FacebookActivity
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:147:9-151:52
+>>>>>>> 176e029... you can login without upload profile pick
+MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
+MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:151:13-49
+	android:label
+<<<<<<< HEAD
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:104:13-45
 	android:configChanges
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:103:13-96
@@ -406,11 +695,23 @@ MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:102:13-57
 activity#com.facebook.CustomTabActivity
 ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:105:9-116:20
+=======
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:150:13-45
+	android:configChanges
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:149:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:148:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:152:9-163:20
+>>>>>>> 176e029... you can login without upload profile pick
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 	tools:node
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\51909be72a3d7cd834a31ea73cfed764\jetified-facebook-common-5.15.3\AndroidManifest.xml:38:13-31
 	android:exported
+<<<<<<< HEAD
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:107:13-36
 	android:name
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:106:13-58
@@ -438,6 +739,37 @@ ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:117:9-119:5
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:119:13-56
 	android:name
 		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:118:13-76
+=======
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:154:13-36
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:153:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:155:13-162:29
+action#android.intent.action.VIEW
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:156:17-69
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:156:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:158:17-76
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:158:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:159:17-78
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:159:27-75
+data
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:161:17-75
+	android:scheme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:161:23-72
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:164:9-167:59
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:166:13-49
+	android:theme
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:167:13-56
+	android:name
+		ADDED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml:165:13-76
+>>>>>>> 176e029... you can login without upload profile pick
 uses-sdk
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android_Workspace\BMI\app\src\main\AndroidManifest.xml
@@ -446,8 +778,8 @@ MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Nizam\
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\757480c9f43fb6e72b7075c514a6d24a\jetified-android-image-cropper-2.8.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\75481e4f325e3678b01ca7833508255c\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\75481e4f325e3678b01ca7833508255c\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\299f5da7d401a5fbb6b720f680ce848b\navigation-ui-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\299f5da7d401a5fbb6b720f680ce848b\navigation-ui-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\09f0c609eb81831771fa2dc170fadd15\navigation-ui-2.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\09f0c609eb81831771fa2dc170fadd15\navigation-ui-2.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.gastricspark:scrolldatepicker:0.0.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cde53e4a9f1f3baa911b96dde6c69636\jetified-scrolldatepicker-0.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a662a09f936ef9769e962d90fad0478e\material-1.2.1\AndroidManifest.xml:20:5-44
@@ -464,8 +796,8 @@ MERGED from [com.firebaseui:firebase-ui-database:6.4.0] C:\Users\Nizam\.gradle\c
 MERGED from [com.firebaseui:firebase-ui-database:6.4.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\391b65d74db1cd9c0ec83bcbad234377\jetified-firebase-ui-database-6.4.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1f106be3704685663748f5430a93eceb\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1f106be3704685663748f5430a93eceb\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b9f1b4b677bf5d307d73018b8a082d97\navigation-fragment-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b9f1b4b677bf5d307d73018b8a082d97\navigation-fragment-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\35ad7d68ac6a2da9c4df6cc9c85c694e\navigation-fragment-2.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\35ad7d68ac6a2da9c4df6cc9c85c694e\navigation-fragment-2.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b5ef0020a43feff1c05d154ec7e35542\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\b5ef0020a43feff1c05d154ec7e35542\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1b3eddc6944e5ddf4cc599a4765ab5cc\jetified-firebase-analytics-18.0.0\AndroidManifest.xml:5:5-44
@@ -570,12 +902,12 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Niza
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\3467d450b76dd5e7b79c55f485a7f3f8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\70d3062d6b824e97c1c02f159be3502d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\70d3062d6b824e97c1c02f159be3502d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cb0865da20318e5dc3b1f5d5c9115c1f\navigation-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cb0865da20318e5dc3b1f5d5c9115c1f\navigation-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\4dfd0408f245461c5f009cd47ec4609e\navigation-runtime-2.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\4dfd0408f245461c5f009cd47ec4609e\navigation-runtime-2.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a1736cfb37f907a6771b9cb0f0608c80\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\a1736cfb37f907a6771b9cb0f0608c80\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1ba6c7b2d22c949fd82151d17ce709f7\navigation-common-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\1ba6c7b2d22c949fd82151d17ce709f7\navigation-common-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\37feb11f81e89b04993c06b91802d939\navigation-common-2.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.2] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\37feb11f81e89b04993c06b91802d939\navigation-common-2.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.1] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Nizam\.gradle\caches\transforms-2\files-2.1\750f1a1e9f5b24d221117033f9c85515\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
