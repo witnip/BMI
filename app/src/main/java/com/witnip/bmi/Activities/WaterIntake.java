@@ -3,6 +3,7 @@ package com.witnip.bmi.Activities;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,11 +12,11 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,6 +41,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterDialogListener, DatePickerDialog.OnDateSetListener {
 
@@ -49,14 +51,22 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
     WaterIntakeAdapter adapter;
 
     private FirebaseAuth mAuth;
+    private ProgressDialog mProgress;
     private DatabaseReference mDatabaseUser;
 
     ArrayList<WaterIntakeModel> waterIntakeList;
+
+    Toolbar tbWaterIntake;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_intake);
+
+        tbWaterIntake = findViewById(R.id.tbWaterIntake);
+
+        setSupportActionBar(tbWaterIntake);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mAuth = FirebaseAuth.getInstance();
         mDatabaseUser = FirebaseDatabase.getInstance().getReference().child("Users");
@@ -88,10 +98,8 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
         });
 
         waterIntakeList = new ArrayList<WaterIntakeModel>();
-
-        setWaterIntakeFirstTime();
         setUI();
-        getCurrentWaterIntake();
+        getCurrentWaterIntakeList();
 
         btnViewGraph.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,9 +111,50 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
 
     }
 
-    private void getCurrentWaterIntake() {
+    private void setUI() {
+        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
+        DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
+        final DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
+        waterIntakeDB.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String date = new SimpleDateFormat("dd-MMMM-yyyy", Locale.getDefault()).format(new Date());
+                if(!snapshot.hasChild("currentDate")){
+                    waterIntakeDB.child("currentDate").setValue(date);
+                    waterIntakeDB.child("remainingWater").setValue(3700);
+                    lblCurrentWaterIntake.setText(String.format("%s ml", 0.0));
+                    lblRemainingWater.setText(String.format("%s ml to go", 3700.0));
+                } else {
+                    String currentDate = Objects.requireNonNull(snapshot.child("currentDate").getValue()).toString();
+                    if(!date.equals(currentDate)){
+                        waterIntakeDB.child("currentDate").setValue(date);
+                        waterIntakeDB.child("remainingWater").setValue(3700);
+                        lblCurrentWaterIntake.setText(String.format("%s ml", 0.0));
+                        lblRemainingWater.setText(String.format("%s ml to go", 3700.0));
+                    }else{
+                        double remainingWater = Double.parseDouble(Objects.requireNonNull(snapshot.child("remainingWater").getValue()).toString());
+                        double totalWaterDrink = 3700-remainingWater;
+                        lblCurrentWaterIntake.setText(String.format("%s ml", totalWaterDrink));
+                        if(remainingWater > 0){
+                            lblRemainingWater.setText(String.format("%s ml to go", remainingWater));
+                        }
+                        else{
+                            lblRemainingWater.setText("Yeah!! you have completed today's tasks");
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("WaterIntake", "onCancelled: "+error);
+            }
+        });
+    }
+
+    private void getCurrentWaterIntakeList() {
         //Setting up RecyclerView
-        String user_id = mAuth.getCurrentUser().getUid();
+        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
         DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
         DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
         DatabaseReference daily = waterIntakeDB.child("daily");
@@ -115,6 +164,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
                 waterIntakeList.clear();
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     WaterIntakeModel model = dataSnapshot.getValue(WaterIntakeModel.class);
+                    assert model != null;
                     String date = model.getDate();
                     String currentDate = new SimpleDateFormat("dd-MMMM-yyyy", Locale.getDefault()).format(new Date());
                     if(date.equals(currentDate)){
@@ -128,7 +178,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("WaterIntake", "onCancelled: "+error);
             }
         });
 
@@ -137,7 +187,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
 
     private void getWaterIntake(final String givenDate) {
         //Setting up RecyclerView
-        String user_id = mAuth.getCurrentUser().getUid();
+        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
         DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
         DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
         DatabaseReference daily = waterIntakeDB.child("daily");
@@ -147,6 +197,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
                 waterIntakeList.clear();
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     WaterIntakeModel model = dataSnapshot.getValue(WaterIntakeModel.class);
+                    assert model != null;
                     String date = model.getDate();
                     if(date.equals(givenDate)){
                         waterIntakeList.add(model);
@@ -159,75 +210,9 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("WaterIntake", "onCancelled: "+error);
             }
         });
-    }
-
-    private void setUI() {
-        String user_id = mAuth.getCurrentUser().getUid();
-        DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
-        DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
-        waterIntakeDB.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.hasChild("currentDate")){
-                    double currentWater = Double.parseDouble(snapshot.child("remainingWater").getValue().toString());
-                    double remainingWater = currentWater;
-                    double totalWaterDrink = 3700-remainingWater;
-                    lblCurrentWaterIntake.setText(String.format("%s ml", totalWaterDrink));
-                    if(remainingWater > 0){
-                        lblRemainingWater.setText(String.format("%s ml to go", remainingWater));
-                    }
-                    else{
-                        lblRemainingWater.setText("Yeah!! you have completed today's tasks");
-                    }
-                } else{
-                    lblCurrentWaterIntake.setText(String.format("%s ml", 0.0));
-                    lblRemainingWater.setText(String.format("%s ml to go", 3700.0));
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-
-    private void setWaterIntakeFirstTime() {
-        String user_id = mAuth.getCurrentUser().getUid();
-        DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
-        final DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
-        waterIntakeDB.addListenerForSingleValueEvent(new ValueEventListener() {
-            String date = new SimpleDateFormat("dd-MMMM-yyyy", Locale.getDefault()).format(new Date());
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(!snapshot.hasChild("currentDate")){
-                    waterIntakeDB.child("currentDate").setValue(date);
-                    waterIntakeDB.child("remainingWater").setValue(3700);
-                    lblCurrentWaterIntake.setText(String.format("%s ml", 0));
-                    lblRemainingWater.setText(String.format("%s ml to go", 3700));
-                    lblDate.setText(date);
-                }else{
-                    String currentDate = snapshot.child("currentDate").getValue().toString();
-                    if(!date.equals(currentDate)){
-                        waterIntakeDB.child("currentDate").setValue(date);
-                        waterIntakeDB.child("remainingWater").setValue(3700);
-                        lblCurrentWaterIntake.setText(String.format("%s ml", 0));
-                        lblRemainingWater.setText(String.format("%s ml to go", 3700));
-                        lblDate.setText(date);
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
     }
 
 
@@ -240,7 +225,7 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
     @Override
     public void setWaterIntake(final Double waterIntake) {
         //Getting the value of waterIntake
-        String user_id = mAuth.getCurrentUser().getUid();
+        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
         DatabaseReference currentUserDB = mDatabaseUser.child(user_id);
         final DatabaseReference waterIntakeDB = currentUserDB.child("waterIntake");
         final String date = new SimpleDateFormat("dd-MMMM-yyyy", Locale.getDefault()).format(new Date());
@@ -249,28 +234,37 @@ public class WaterIntake extends AppCompatActivity implements WaterDialog.WaterD
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                double currentWater = Double.parseDouble(snapshot.child("remainingWater").getValue().toString());
+                double currentWater = Double.parseDouble(Objects.requireNonNull(snapshot.child("remainingWater").getValue()).toString());
                 double remainingWater = currentWater - waterIntake;
                 double totalWaterDrink = 3700-remainingWater;
-                if(remainingWater > 0){
-                    lblCurrentWaterIntake.setText(String.format("%s ml", totalWaterDrink));
-                    lblRemainingWater.setText(String.format("%s ml to go", remainingWater));
-                    waterIntakeDB.child("remainingWater").setValue(remainingWater);
-                    long unixDate = Instant.now().getEpochSecond();
-                    DatabaseReference dailyWaterIntake = waterIntakeDB.child("daily");
-                    DatabaseReference dateWiseData = dailyWaterIntake.child(""+unixDate);
-                    dateWiseData.child("date").setValue(date);
-                    dateWiseData.child("time").setValue(time);
-                    dateWiseData.child("waterIntake").setValue(waterIntake);
+                String currentDate = Objects.requireNonNull(snapshot.child("currentDate").getValue()).toString();
+                if(date.equals(currentDate)){
+                    if(remainingWater > 0){
+                        lblCurrentWaterIntake.setText(String.format("%s ml", totalWaterDrink));
+                        lblRemainingWater.setText(String.format("%s ml to go", remainingWater));
+                        waterIntakeDB.child("remainingWater").setValue(remainingWater);
+                        long unixDate = Instant.now().getEpochSecond();
+                        DatabaseReference dailyWaterIntake = waterIntakeDB.child("daily");
+                        DatabaseReference dateWiseData = dailyWaterIntake.child(""+unixDate);
+                        dateWiseData.child("date").setValue(date);
+                        dateWiseData.child("time").setValue(time);
+                        dateWiseData.child("waterIntake").setValue(waterIntake);
+                    }
+                    else{
+                        lblRemainingWater.setText("Yeah!! you have completed today's tasks");
+                    }
+                } else{
+                    waterIntakeDB.child("currentDate").setValue(date);
+                    waterIntakeDB.child("remainingWater").setValue(3700);
+                    lblCurrentWaterIntake.setText(String.format("%s ml", 0));
+                    lblRemainingWater.setText(String.format("%s ml to go", 3700));
                 }
-                else{
-                    lblRemainingWater.setText("Yeah!! you have completed today's tasks");
-                }
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("WaterIntake", "onCancelled: "+error);
             }
         });
 

@@ -37,6 +37,7 @@ public class WeightGoal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight_goal);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txtStartingWeight = findViewById(R.id.txtStartingWeight);
         lblDimStartingWeight = findViewById(R.id.lblDimStartingWeight);

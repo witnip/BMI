@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".Activities.Diet">
 
+<<<<<<< HEAD
     <Spinner
         android:id="@+id/spDays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
         android:paddingVertical="15dp"
         android:foreground="@drawable/edit_text"
         android:fontFamily="@font/montserrat"
         tools:ignore="UnusedAttribute" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -27,6 +31,8 @@
         android:padding="20dp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
     <ScrollView
         android:layout_width="match_parent"
@@ -41,12 +47,11 @@
                 android:id="@+id/lblEarlyMorning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/early_morning"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -56,6 +61,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvEarlyMorning"
@@ -88,9 +95,9 @@
                 android:layout_below="@id/cvEarlyMorning"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/breakfast"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -100,6 +107,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbBreakfast"
@@ -132,9 +141,9 @@
                 android:layout_below="@id/cbBreakfast"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/brunch"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -144,6 +153,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbBrunch"
@@ -176,9 +187,9 @@
                 android:layout_below="@id/cbBrunch"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/lunch"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -188,6 +199,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbLunch"
@@ -221,9 +234,9 @@
                 android:layout_below="@id/cbLunch"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/snack"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -233,6 +246,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbSnack"
@@ -265,9 +280,9 @@
                 android:layout_below="@id/cbSnack"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/dinner"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -277,6 +292,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbDinner"
@@ -309,9 +326,9 @@
                 android:layout_below="@id/cbDinner"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/bed_time"
-<<<<<<< HEAD
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 android:textColor="@color/colorAccent"
@@ -321,6 +338,8 @@
                 android:textSize="20sp" />
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cbBedTime"
@@ -347,3 +366,6 @@
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
+=======
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 05a82eae599a5c8bbe4574911f9861259c51891a

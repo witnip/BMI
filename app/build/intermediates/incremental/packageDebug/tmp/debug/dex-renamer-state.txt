@@ -1,14 +1,27 @@
 <<<<<<< HEAD
-#Fri Dec 18 02:18:13 IST 2020
+<<<<<<< HEAD
+#Sun Dec 20 16:03:59 IST 2020
+path.2=classes3.dex
+path.1=classes2.dex
 =======
+#Tue Dec 01 17:49:27 IST 2020
+path.2=classes2.dex
+path.1=classes.dex
+>>>>>>> 05a82eae599a5c8bbe4574911f9861259c51891a
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 #Fri Dec 18 02:18:13 IST 2020
 =======
 #Fri Dec 18 01:38:54 IST 2020
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+#Mon Dec 28 05:05:01 IST 2020
+>>>>>>> origin/main
 path.2=classes2.dex
 path.1=classes.dex
+>>>>>>> 176e029... you can login without upload profile pick
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

@@ -23,6 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 import com.witnip.bmi.R;
 
+import java.util.Objects;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Profile extends AppCompatActivity {
@@ -40,6 +42,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -84,7 +87,7 @@ public class Profile extends AppCompatActivity {
                     int age = Integer.parseInt(snapshot.child("age").getValue().toString());
                     String profilePath = snapshot.child("profile").getValue().toString();
 
-                    Glide.with(Profile.this).load(profilePath).into(profileImage);
+                    Glide.with(getApplicationContext()).load(profilePath).into(profileImage);
                     lblName.setText(firstName+" "+lastName);
                     lblEmail.setText(Email);
 

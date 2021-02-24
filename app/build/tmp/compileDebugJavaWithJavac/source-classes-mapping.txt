@@ -43,12 +43,12 @@ com/witnip/bmi/Activities/CaloriesCalculation.java
  com.witnip.bmi.Activities.CaloriesCalculation$4
  com.witnip.bmi.Activities.CaloriesCalculation$5
  com.witnip.bmi.Activities.CaloriesCalculation$6
-com/witnip/bmi/Activities/FeedBack.java
- com.witnip.bmi.Activities.FeedBack
 com/witnip/bmi/Activities/SetUpActivity.java
  com.witnip.bmi.Activities.SetUpActivity
  com.witnip.bmi.Activities.SetUpActivity$1
  com.witnip.bmi.Activities.SetUpActivity$1$1
+ com.witnip.bmi.Activities.SetUpActivity$10
+ com.witnip.bmi.Activities.SetUpActivity$11
  com.witnip.bmi.Activities.SetUpActivity$2
  com.witnip.bmi.Activities.SetUpActivity$3
  com.witnip.bmi.Activities.SetUpActivity$4
@@ -84,16 +84,6 @@ com/witnip/bmi/Activities/BmiResult.java
  com.witnip.bmi.Activities.BmiResult
 com/witnip/bmi/Activities/WeightTracker.java
  com.witnip.bmi.Activities.WeightTracker
- com.witnip.bmi.Activities.WeightTracker$1
- com.witnip.bmi.Activities.WeightTracker$2
- com.witnip.bmi.Activities.WeightTracker$3
- com.witnip.bmi.Activities.WeightTracker$3$1
- com.witnip.bmi.Activities.WeightTracker$3$1$1
- com.witnip.bmi.Activities.WeightTracker$3$2
- com.witnip.bmi.Activities.WeightTracker$4
- com.witnip.bmi.Activities.WeightTracker$5
-com/witnip/bmi/Model/WeightTrackerGraphModel.java
- com.witnip.bmi.Model.WeightTrackerGraphModel
 com/witnip/bmi/DatePicker/DatePickerFragment.java
  com.witnip.bmi.DatePicker.DatePickerFragment
 com/witnip/bmi/Activities/IdealWeightResult.java
@@ -111,8 +101,6 @@ com/witnip/bmi/Activities/Login.java
  com.witnip.bmi.Activities.Login$7
  com.witnip.bmi.Activities.Login$8
  com.witnip.bmi.Activities.Login$9
-com/witnip/bmi/CompareWeight.java
- com.witnip.bmi.CompareWeight
 com/witnip/bmi/Adapters/SliderAdapter.java
  com.witnip.bmi.Adapters.SliderAdapter
 com/witnip/bmi/Activities/About.java
@@ -125,13 +113,11 @@ com/witnip/bmi/FirebaseDatabaseHandler.java
  com.witnip.bmi.FirebaseDatabaseHandler$2
  com.witnip.bmi.FirebaseDatabaseHandler$2$1
  com.witnip.bmi.FirebaseDatabaseHandler$3
-com/witnip/bmi/Adapters/WeightTrackerAdapter.java
- com.witnip.bmi.Adapters.WeightTrackerAdapter
- com.witnip.bmi.Adapters.WeightTrackerAdapter$WeightTrackerViewHolder
 com/witnip/bmi/Model/User.java
  com.witnip.bmi.Model.User
 com/witnip/bmi/Model/WaterIntakeModel.java
  com.witnip.bmi.Model.WaterIntakeModel
+<<<<<<< HEAD
 com/witnip/bmi/Activities/WaterIntake.java
  com.witnip.bmi.Activities.WaterIntake
  com.witnip.bmi.Activities.WaterIntake$1
@@ -142,11 +128,6 @@ com/witnip/bmi/Activities/WaterIntake.java
  com.witnip.bmi.Activities.WaterIntake$6
  com.witnip.bmi.Activities.WaterIntake$7
  com.witnip.bmi.Activities.WaterIntake$8
-com/witnip/bmi/Activities/WeightTrackerGraph.java
- com.witnip.bmi.Activities.WeightTrackerGraph
- com.witnip.bmi.Activities.WeightTrackerGraph$1
-com/witnip/bmi/Model/WeightTrackerModel.java
- com.witnip.bmi.Model.WeightTrackerModel
 com/witnip/bmi/ui/home/HomeFragment.java
  com.witnip.bmi.ui.home.HomeFragment
  com.witnip.bmi.ui.home.HomeFragment$1
@@ -162,11 +143,28 @@ com/witnip/bmi/ui/home/HomeFragment.java
  com.witnip.bmi.ui.home.HomeFragment$7
  com.witnip.bmi.ui.home.HomeFragment$8
  com.witnip.bmi.ui.home.HomeFragment$9
+=======
+com/witnip/bmi/Adapters/WaterIntakeAdapter.java
+ com.witnip.bmi.Adapters.WaterIntakeAdapter
+ com.witnip.bmi.Adapters.WaterIntakeAdapter$WaterIntakeViewHolder
+com/witnip/bmi/Activities/WeightTrackerGraph.java
+ com.witnip.bmi.Activities.WeightTrackerGraph
+ com.witnip.bmi.Activities.WeightTrackerGraph$1
+com/witnip/bmi/Model/WeightTrackerModel.java
+ com.witnip.bmi.Model.WeightTrackerModel
+com/witnip/bmi/Activities/WeightGoal.java
+ com.witnip.bmi.Activities.WeightGoal
+ com.witnip.bmi.Activities.WeightGoal$1
+ com.witnip.bmi.Activities.WeightGoal$2
+ com.witnip.bmi.Activities.WeightGoal$3
+ com.witnip.bmi.Activities.WeightGoal$4
+ com.witnip.bmi.Activities.WeightGoal$5
 com/witnip/bmi/Dialog/WeightDialog.java
  com.witnip.bmi.Dialog.WeightDialog
  com.witnip.bmi.Dialog.WeightDialog$1
  com.witnip.bmi.Dialog.WeightDialog$2
  com.witnip.bmi.Dialog.WeightDialog$WeightTrackerDialogListener
+>>>>>>> 176e029... you can login without upload profile pick
 com/witnip/bmi/Activities/Register.java
  com.witnip.bmi.Activities.Register
  com.witnip.bmi.Activities.Register$1
@@ -183,16 +181,32 @@ com/witnip/bmi/Activities/Diet.java
 com/witnip/bmi/Activities/MainActivity.java
  com.witnip.bmi.Activities.MainActivity
  com.witnip.bmi.Activities.MainActivity$1
- com.witnip.bmi.Activities.MainActivity$1$1
  com.witnip.bmi.Activities.MainActivity$2
  com.witnip.bmi.Activities.MainActivity$3
-com/witnip/bmi/Adapters/WaterIntakeAdapter.java
- com.witnip.bmi.Adapters.WaterIntakeAdapter
- com.witnip.bmi.Adapters.WaterIntakeAdapter$WaterIntakeViewHolder
-com/witnip/bmi/Activities/WeightGoal.java
- com.witnip.bmi.Activities.WeightGoal
- com.witnip.bmi.Activities.WeightGoal$1
- com.witnip.bmi.Activities.WeightGoal$2
- com.witnip.bmi.Activities.WeightGoal$3
- com.witnip.bmi.Activities.WeightGoal$4
- com.witnip.bmi.Activities.WeightGoal$5
+com/witnip/bmi/ui/home/HomeFragment.java
+ com.witnip.bmi.ui.home.HomeFragment
+ com.witnip.bmi.ui.home.HomeFragment$1
+ com.witnip.bmi.ui.home.HomeFragment$10
+ com.witnip.bmi.ui.home.HomeFragment$11
+ com.witnip.bmi.ui.home.HomeFragment$12
+ com.witnip.bmi.ui.home.HomeFragment$13
+ com.witnip.bmi.ui.home.HomeFragment$14
+ com.witnip.bmi.ui.home.HomeFragment$15
+ com.witnip.bmi.ui.home.HomeFragment$2
+ com.witnip.bmi.ui.home.HomeFragment$2$1
+ com.witnip.bmi.ui.home.HomeFragment$3
+ com.witnip.bmi.ui.home.HomeFragment$4
+ com.witnip.bmi.ui.home.HomeFragment$5
+ com.witnip.bmi.ui.home.HomeFragment$6
+ com.witnip.bmi.ui.home.HomeFragment$7
+ com.witnip.bmi.ui.home.HomeFragment$8
+ com.witnip.bmi.ui.home.HomeFragment$9
+com/witnip/bmi/Activities/WaterIntake.java
+ com.witnip.bmi.Activities.WaterIntake
+ com.witnip.bmi.Activities.WaterIntake$1
+ com.witnip.bmi.Activities.WaterIntake$2
+ com.witnip.bmi.Activities.WaterIntake$3
+ com.witnip.bmi.Activities.WaterIntake$4
+ com.witnip.bmi.Activities.WaterIntake$5
+ com.witnip.bmi.Activities.WaterIntake$6
+ com.witnip.bmi.Activities.WaterIntake$7

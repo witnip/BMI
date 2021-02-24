@@ -63,6 +63,7 @@ public class WaterIntakeGraph extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_intake_graph);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         barGraphWaterIntake = findViewById(R.id.barGraphWaterIntake);
 
@@ -168,7 +169,7 @@ public class WaterIntakeGraph extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(WaterIntakeGraph.this, "Failed!!! to get Data", Toast.LENGTH_SHORT).show();
+
             }
         });
 

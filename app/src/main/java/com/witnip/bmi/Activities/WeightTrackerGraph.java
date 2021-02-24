@@ -49,6 +49,7 @@ public class WeightTrackerGraph extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight_tracker_graph);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         barGraphWeightTracker = findViewById(R.id.barGraphWeightTracker);
 

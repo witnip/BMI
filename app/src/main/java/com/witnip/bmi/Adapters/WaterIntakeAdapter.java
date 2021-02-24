@@ -50,7 +50,7 @@ public class WaterIntakeAdapter extends RecyclerView.Adapter<WaterIntakeAdapter.
         return waterIntakeList.size();
     }
 
-    static class WaterIntakeViewHolder extends RecyclerView.ViewHolder{
+    class WaterIntakeViewHolder extends RecyclerView.ViewHolder{
 
         TextView lblWaterIntake;
         TextView lblDate;

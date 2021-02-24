@@ -4,23 +4,6 @@
             "outputFile": "D:\\Android_Workspace\\BMI\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\299f5da7d401a5fbb6b720f680ce848b\\navigation-ui-2.3.1\\res\\values-be\\values-be.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,164",
-                        "endColumns": "108,125",
-                        "endOffsets": "159,285"
-                    },
-                    "to": {
-                        "startLines": "47,48",
-                        "startColumns": "4,4",
-                        "startOffsets": "5556,5665",
-                        "endColumns": "108,125",
-                        "endOffsets": "5660,5786"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\d92a27efcac738b4f280b9ad0c07bda7\\jetified-play-services-base-17.1.0\\res\\values-be\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -86,6 +69,23 @@
                         "startOffsets": "105,225,328,444,530,635,754,834,911,1003,1097,1192,1286,1381,1475,1571,1666,1758,1850,1931,2037,2142,2240,2348,2454,2562,2735,5791",
                         "endColumns": "119,102,115,85,104,118,79,76,91,93,94,93,94,93,95,94,91,91,80,105,104,97,107,105,107,172,99,81",
                         "endOffsets": "220,323,439,525,630,749,829,906,998,1092,1187,1281,1376,1470,1566,1661,1753,1845,1926,2032,2137,2235,2343,2449,2557,2730,2830,5868"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Nizam\\.gradle\\caches\\transforms-2\\files-2.1\\09f0c609eb81831771fa2dc170fadd15\\navigation-ui-2.3.2\\res\\values-be\\values-be.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,125",
+                        "endOffsets": "159,285"
+                    },
+                    "to": {
+                        "startLines": "47,48",
+                        "startColumns": "4,4",
+                        "startOffsets": "5556,5665",
+                        "endColumns": "108,125",
+                        "endOffsets": "5660,5786"
                     }
                 }
             ]

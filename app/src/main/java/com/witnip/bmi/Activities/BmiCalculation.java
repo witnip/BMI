@@ -31,6 +31,7 @@ public class BmiCalculation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi_calculation);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnCalculate = findViewById(R.id.btnCalculate);
 

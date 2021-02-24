@@ -56,15 +56,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         mAuth = FirebaseAuth.getInstance();
         mDatabaseUser = FirebaseDatabase.getInstance().getReference().child("Users");
         mProgress = new ProgressDialog(this);
         mDatabaseUser.keepSynced(true);
 
+
         checkUserExits();
 
         setContentView(R.layout.activity_main);
-
 
 
 
@@ -74,30 +75,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() == null) {
-
                     Intent loginIntent = new Intent(MainActivity.this, Login.class);
                     loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(loginIntent);
                     finish();
-                } else {
-                    if (!firebaseAuth.getCurrentUser().isEmailVerified()) {
-                        mAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(MainActivity.this, "Verification email sent to : " + mAuth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-                        Intent loginIntent = new Intent(MainActivity.this, Login.class);
-                        loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(loginIntent);
-                        finish();
-                        Toast.makeText(MainActivity.this, "Verify email first", Toast.LENGTH_SHORT).show();
-                    }
                 }
             }
         };
+
+
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -162,10 +149,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent gotoShare = new Intent(MainActivity.this,Share.class);
                 startActivity(gotoShare);
                 break;
-            case R.id.nav_feedback:
-                Intent gotoFeedback = new Intent(MainActivity.this,FeedBack.class);
-                startActivity(gotoFeedback);
-                break;
             case R.id.nav_logout:
                 Intent gotoLogout = new Intent(MainActivity.this,Logout.class);
                 startActivity(gotoLogout);
@@ -185,26 +168,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+    
 
     @Override
     protected void onStart() {
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
-
     }
 
 
@@ -213,15 +182,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mProgress.setMessage("Checking User...");
             mProgress.show();
             final String user_id = mAuth.getCurrentUser().getUid();
-            final String email = mAuth.getCurrentUser().getEmail();
-            mDatabaseUser.addValueEventListener(new ValueEventListener() {
+            mDatabaseUser.child(user_id).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    if (!dataSnapshot.child(user_id).hasChild("gender")) {
-                        String firstName = dataSnapshot.child(user_id).child("firstName").getValue().toString();
-                        String lastName = dataSnapshot.child(user_id).child("lastName").getValue().toString();
-                        goToSetUpProfile(firstName, lastName, email);
+                    if (!dataSnapshot.hasChild("gender")) {
+                        String email = mAuth.getCurrentUser().getEmail();
+                        String firstName = dataSnapshot.child("firstName").getValue().toString();
+                        String lastName = dataSnapshot.child("lastName").getValue().toString();
+                        goToSetUpProfile(firstName,lastName,email);
                         mProgress.dismiss();
+
                         Toast.makeText(MainActivity.this, "Set up user first..", Toast.LENGTH_SHORT).show();
                     }else {
                         mProgress.dismiss();
@@ -230,6 +200,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Log.d("MainActivity", "onCancelled: "+databaseError);
                     mProgress.dismiss();
                 }
             });

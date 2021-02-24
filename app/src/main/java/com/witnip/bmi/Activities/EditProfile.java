@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +34,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
@@ -59,6 +61,7 @@ public class EditProfile extends AppCompatActivity implements DatePickerDialog.O
 
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabaseUser;
+    private StorageTask uploadTask;
     private StorageReference mStorage;
     private ProgressDialog mProgress;
 
@@ -76,6 +79,7 @@ public class EditProfile extends AppCompatActivity implements DatePickerDialog.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         profileImage = findViewById(R.id.profile_image);
         lblName = findViewById(R.id.lblName);
@@ -190,7 +194,7 @@ public class EditProfile extends AppCompatActivity implements DatePickerDialog.O
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
-
+                    Log.e("EditProfile", "onCancelled: "+error);
                 }
             });
         }
@@ -481,7 +485,7 @@ public class EditProfile extends AppCompatActivity implements DatePickerDialog.O
 
                 mProgress.setMessage("Updating...");
                 mProgress.show();
-                StorageReference filepath = mStorage.child(mImageUri.getLastPathSegment());
+                StorageReference filepath = mStorage.child(mAuth.getCurrentUser().getUid()+".jpg");
                 filepath.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

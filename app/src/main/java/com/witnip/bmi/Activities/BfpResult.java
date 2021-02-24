@@ -31,6 +31,7 @@ public class BfpResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bfp_result);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         rlEssentialFatPercent = findViewById(R.id.rlEssentialFatPercent);
         lblEssentialFatPercentValue = findViewById(R.id.lblEssentialFatPercentValue);

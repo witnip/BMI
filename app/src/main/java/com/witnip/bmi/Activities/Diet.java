@@ -21,6 +21,7 @@ public class Diet extends AppCompatActivity implements AdapterView.OnItemSelecte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txtEarlyMorning = findViewById(R.id.txtEarlyMorning);
         txtBreakfast = findViewById(R.id.txtBreakfast);
@@ -44,9 +45,12 @@ public class Diet extends AppCompatActivity implements AdapterView.OnItemSelecte
     private void setDiet(String day) {
         String sundayDiet[] = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
                 "► METHIDANA (5g)WITH\n► LUKEWARM (150ml) WATER + APPLE",
                 "► 2 BOILED EGGWHITE\n► TONED MILK (200ml)\n",
                 "► DIET NAMKEEN (1bowl) +\n► GREEN TEA (1 cup) + FRUIT",
@@ -114,6 +118,7 @@ public class Diet extends AppCompatActivity implements AdapterView.OnItemSelecte
                 "► FRUIT CUSTARD (1 bowl) + 2BOILED EGG",
                 "► DOSA/IDLI (2/4)\n► SAMBHAR (1 bowl) +COCONUT CHUTNEY (20g)\n",
                 "► TONED MILK (150 ml)\n► HIGH FIBRE BISCUITS (2)"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -186,6 +191,8 @@ public class Diet extends AppCompatActivity implements AdapterView.OnItemSelecte
                 "TONED MILK (150 ml)\nHIGH FIBRE BISCUITS (2)"
 >>>>>>> cf0e5dc29b293050a03c4c0e8c8ea976a83eb35f
 >>>>>>> 1968fbd3f3da5a0ab172fd85d10cb29d0bec2990
+=======
+>>>>>>> origin/main
         };
 
         switch (day){
